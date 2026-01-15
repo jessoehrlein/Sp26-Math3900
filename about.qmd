@@ -5,4 +5,3 @@ title: "MATH 3900: Mathematics Seminar - Mathematics of Climate"
 The Seminar provides the opportunity for problem solving and research on one or more topics outside the core curriculum areas.
 
 This semester's seminar focuses on the mathematical and statistical tools used in modeling and analyzing the Earth system, with particular focus on dynamical systems, time series analysis, and evaluating extremes. The seminar will also focus on reading and communication in the mathematical sciences.
-

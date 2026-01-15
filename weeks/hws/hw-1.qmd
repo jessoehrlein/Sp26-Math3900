@@ -42,19 +42,18 @@ Suppose that $S_0$ changes slightly by an amount we'll call $\Delta S$. If $\alp
 
 #### Part (c)
 
-Suppose now that $\alpha$, $A$, and $B$ *do* change with temperature as follows:
-$$
+Suppose now that $\alpha$, $A$, and $B$ *do* change with temperature as follows: $$
     \begin{align*}
         \alpha(T) = \alpha_0 + \alpha_1 \Delta T; \\
         A(T) = A_0 + A_1 \Delta T; \\
         B(T) = B_0 + B_1 \Delta T;\\
     \end{align*}
-$$    
+$$\
 where $\alpha_0, A_0, B_0$ are the values when $T = T_0$. Find an expression relating $\Delta S$ to $\Delta T$. You can assume that $(\Delta T)^2 \approx 0$.
 
 #### Part (d)
 
-With some wrangling of terms, you can get this to look like $$B_0 \Delta T = f (1- \alpha_0) \Delta S,$$ with $f$ condensing a pretty messy expression. Compare this to your answer to (b). Why do you think $f$ is called ``climate gain?"
+With some wrangling of terms, you can get this to look like $$B_0 \Delta T = f (1- \alpha_0) \Delta S,$$ with $f$ condensing a pretty messy expression. Compare this to your answer to (b). Why do you think $f$ is called \`\`climate gain?"
 
 ### Exercise 3
 
