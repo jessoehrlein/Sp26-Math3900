@@ -24,8 +24,6 @@ Welcome! This week focuses on getting oriented to the course and exploring the d
 
 [**Homework Problems and Reading Questions**](hws/hw-1.qmd)
 
-(need to figure out that link)
-
 ::: callout-caution
 # Submission
 
