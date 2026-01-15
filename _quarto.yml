@@ -1,0 +1,44 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  page-navigation: true
+  title: "Math 3900"
+  description: "Homepage for Math 3900 - Mathematics Seminar: Mathematics of Climate"
+  site-url: "https://jessoehrlein.github.io/Sp26-Math3900"
+  repo-url: https://github.com/jessoehrlein/Sp26-Math3900
+  repo-actions: [issue]
+
+  page-footer:
+    right: "This page is built with [Quarto](https://quarto.org/)."
+    left: "&copy; Copyright 2026, Jessie Oehrlein"
+    background: "#D9E3E4"
+
+  sidebar:
+    background: "#D9E3E4"
+    pinned: true
+    align: center
+    style: "docked"
+    search: true
+    collapse-level: 1
+    contents:
+      - section: "Course information"
+        contents:
+          - href: course-syllabus.qmd
+            text: Syllabus
+          - href: index.qmd
+            text: Schedule
+      - section: "Weekly materials"
+        contents:
+          - href: weeks/week-1.qmd
+            text: "Week 1"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+editor: visual
+
