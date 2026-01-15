@@ -23,9 +23,9 @@
   {
     "objectID": "weeks/week-1.html",
     "href": "weeks/week-1.html",
-    "title": "Sp26-Math3900",
+    "title": "Week One: Energy Balance Models",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "Welcome! This week focuses on getting oriented to the course and exploring the differential equations that we use to model Earth’s energy balance.\n\n1 In Class\n(slides and activity will be here)\n\n\n2 Homework 1 – Due Friday, Jan. 30 by the start of class\n📖 Required Reading: The Quantum Mechanics of Greenhouse Gases\nHomework Problems and Reading Questions\n\n\n\n\n\n\nSubmission\n\n\n\nSubmit a screenshot of the completion page (the last page of the tutorial) to the Canvas assignment portal!"
   },
   {
     "objectID": "course-syllabus.html#my-course-goals",
@@ -201,5 +201,12 @@
     "title": "MATH 3900: Mathematics Seminar - Mathematics of Climate",
     "section": "7.4 Unit 4: Final Projects (Week 13-Final)",
     "text": "7.4 Unit 4: Final Projects (Week 13-Final)\nIn the final part of the course, you will lead! Each student will do a final project either exploring a new math & climate topic or extending/applying something we’ve covered in a new way. You will each have 25-30 minutes in class or our finals period to lead the class in exploring that topic."
+  },
+  {
+    "objectID": "hws/hw-1.html",
+    "href": "hws/hw-1.html",
+    "title": "HW 1: Energy Balance Models",
+    "section": "",
+    "text": "Important\n\n\n\nDue:\n\nFriday, January 30, 9:30 AM\n\n\n\n\nIntroduction\nWORDS\n\n\nExercises\n\n\nExercise 1: Nighttime Temperature\nUsing Model 2 from class, estimate how much the atmosphere in the model would cool overnight. The heat capacity of the atmosphere is about \\(10^7\\) J/(K\\(\\cdot\\) m\\(^2\\)).\n(Hint: It’s not much, so you can make some assumptions that make things easier! What radiation, if any, is coming into the top of the atmosphere? What radiation, if any, is going out? )\n\n\nExercise 2: Budyko’s Model\nSatellite data suggests that blackbody radiation might not be the best model for Earth’s outgoing radiation! Instead, we can use a linear(-ish) model: \\(A + BT_s\\). (The ish is because \\(A\\) and \\(B\\) depend on temperature if we’re being careful, as we’ll consider in Parts (c) and (d).)\n\nPart (a)\nModify Model 1 to use this form for Earth’s outgoing radiation instead, and find an expression for surface temperature in this case. We’ll call this temperature \\(T_0\\).\n\n\nPart (b)\nSuppose that \\(S_0\\) changes slightly by an amount we’ll call \\(\\Delta S\\). If \\(\\alpha, A,\\) and \\(B\\) don’t change, write an expression for \\(\\Delta T\\), how much \\(T_s\\) changes.\n\n\nPart (c)\nSuppose now that \\(\\alpha\\), \\(A\\), and \\(B\\) do change with temperature as follows: \\[\n    \\begin{align*}\n        \\alpha(T) = \\alpha_0 + \\alpha_1 \\Delta T; \\\\\n        A(T) = A_0 + A_1 \\Delta T; \\\\\n        B(T) = B_0 + B_1 \\Delta T;\\\\\n    \\end{align*}\n\\]\nwhere \\(\\alpha_0, A_0, B_0\\) are the values when \\(T = T_0\\). Find an expression relating \\(\\Delta S\\) to \\(\\Delta T\\). You can assume that \\((\\Delta T)^2 \\approx 0\\).\n\n\nPart (d)\nWith some wrangling of terms, you can get this to look like \\[B_0 \\Delta T = f (1- \\alpha_0) \\Delta S,\\] with \\(f\\) condensing a pretty messy expression. Compare this to your answer to (b). Why do you think \\(f\\) is called ``climate gain?”\n\n\n\nExercise 3\nREADING QUESTION HERE"
   }
 ]

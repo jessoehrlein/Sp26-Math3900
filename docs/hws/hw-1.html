@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Math 3900 - Week One: Energy Balance Models</title>
+<title>Math 3900 - HW 1: Energy Balance Models</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,7 +29,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../index.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -59,6 +58,8 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -72,7 +73,9 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../weeks/week-1.html">Weekly materials</a></li><li class="breadcrumb-item"><a href="../weeks/week-1.html">Week 1</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Math 3900
+      </li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -128,16 +131,16 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
  <span class="menu-text">Weekly materials</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../weeks/week-1.html" class="sidebar-item-text sidebar-link active">
+  <a href="../weeks/week-1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 1</span></a>
   </div>
 </li>
@@ -153,8 +156,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#in-class" id="toc-in-class" class="nav-link active" data-scroll-target="#in-class"><span class="header-section-number">1</span> In Class</a></li>
-  <li><a href="#homework-1-due-friday-jan.-30-by-the-start-of-class" id="toc-homework-1-due-friday-jan.-30-by-the-start-of-class" class="nav-link" data-scroll-target="#homework-1-due-friday-jan.-30-by-the-start-of-class"><span class="header-section-number">2</span> Homework 1 – Due Friday, Jan.&nbsp;30 by the start of class</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">Exercises</a>
+  <ul class="collapse">
+  <li><a href="#exercise-1-nighttime-temperature" id="toc-exercise-1-nighttime-temperature" class="nav-link" data-scroll-target="#exercise-1-nighttime-temperature">Exercise 1: Nighttime Temperature</a></li>
+  <li><a href="#exercise-2-budykos-model" id="toc-exercise-2-budykos-model" class="nav-link" data-scroll-target="#exercise-2-budykos-model">Exercise 2: Budyko’s Model</a></li>
+  <li><a href="#exercise-3" id="toc-exercise-3" class="nav-link" data-scroll-target="#exercise-3">Exercise 3</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/jessoehrlein/Sp26-Math3900/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -163,7 +171,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Week One: Energy Balance Models</h1>
+<h1 class="title">HW 1: Energy Balance Models</h1>
 </div>
 
 
@@ -178,30 +186,67 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Welcome! This week focuses on getting oriented to the course and exploring the differential equations that we use to model Earth’s energy balance.</p>
-<section id="in-class" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> In Class</h1>
-<p>(slides and activity will be here)</p>
-</section>
-<section id="homework-1-due-friday-jan.-30-by-the-start-of-class" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Homework 1 – Due Friday, Jan.&nbsp;30 by the start of class</h1>
-<p>📖 <a href="https://www.quantamagazine.org/the-quantum-mechanics-of-greenhouse-gases-20250915/"><strong>Required Reading:</strong> The Quantum Mechanics of Greenhouse Gases</a></p>
-<p><a href="hws/hw-1.qmd"><strong>Homework Problems and Reading Questions</strong></a></p>
-<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Submission
+Important
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Submit a screenshot of the completion page (the last page of the tutorial) to the Canvas assignment portal!</p>
+<p>Due:</p>
+<ul>
+<li>Friday, January 30, 9:30 AM</li>
+</ul>
 </div>
 </div>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>WORDS</p>
+</section>
+<section id="exercises" class="level1">
+<h1>Exercises</h1>
+<hr>
+<section id="exercise-1-nighttime-temperature" class="level3">
+<h3 class="anchored" data-anchor-id="exercise-1-nighttime-temperature">Exercise 1: Nighttime Temperature</h3>
+<p>Using Model 2 from class, estimate how much the atmosphere in the model would cool overnight. The heat capacity of the atmosphere is about <span class="math inline">\(10^7\)</span> J/(K<span class="math inline">\(\cdot\)</span> m<span class="math inline">\(^2\)</span>).</p>
+<p>(<em>Hint</em>: It’s not much, so you can make some assumptions that make things easier! What radiation, if any, is coming into the top of the atmosphere? What radiation, if any, is going out? )</p>
+</section>
+<section id="exercise-2-budykos-model" class="level3">
+<h3 class="anchored" data-anchor-id="exercise-2-budykos-model">Exercise 2: Budyko’s Model</h3>
+<p>Satellite data suggests that blackbody radiation might not be the best model for Earth’s outgoing radiation! Instead, we can use a linear(-ish) model: <span class="math inline">\(A + BT_s\)</span>. (The ish is because <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> depend on temperature if we’re being careful, as we’ll consider in Parts (c) and (d).)</p>
+<section id="part-a" class="level4">
+<h4 class="anchored" data-anchor-id="part-a">Part (a)</h4>
+<p>Modify Model 1 to use this form for Earth’s outgoing radiation instead, and find an expression for surface temperature in this case. We’ll call this temperature <span class="math inline">\(T_0\)</span>.</p>
+</section>
+<section id="part-b" class="level4">
+<h4 class="anchored" data-anchor-id="part-b">Part (b)</h4>
+<p>Suppose that <span class="math inline">\(S_0\)</span> changes slightly by an amount we’ll call <span class="math inline">\(\Delta S\)</span>. If <span class="math inline">\(\alpha, A,\)</span> and <span class="math inline">\(B\)</span> don’t change, write an expression for <span class="math inline">\(\Delta T\)</span>, how much <span class="math inline">\(T_s\)</span> changes.</p>
+</section>
+<section id="part-c" class="level4">
+<h4 class="anchored" data-anchor-id="part-c">Part (c)</h4>
+<p>Suppose now that <span class="math inline">\(\alpha\)</span>, <span class="math inline">\(A\)</span>, and <span class="math inline">\(B\)</span> <em>do</em> change with temperature as follows: <span class="math display">\[
+    \begin{align*}
+        \alpha(T) = \alpha_0 + \alpha_1 \Delta T; \\
+        A(T) = A_0 + A_1 \Delta T; \\
+        B(T) = B_0 + B_1 \Delta T;\\
+    \end{align*}
+\]</span><br>
+where <span class="math inline">\(\alpha_0, A_0, B_0\)</span> are the values when <span class="math inline">\(T = T_0\)</span>. Find an expression relating <span class="math inline">\(\Delta S\)</span> to <span class="math inline">\(\Delta T\)</span>. You can assume that <span class="math inline">\((\Delta T)^2 \approx 0\)</span>.</p>
+</section>
+<section id="part-d" class="level4">
+<h4 class="anchored" data-anchor-id="part-d">Part (d)</h4>
+<p>With some wrangling of terms, you can get this to look like <span class="math display">\[B_0 \Delta T = f (1- \alpha_0) \Delta S,\]</span> with <span class="math inline">\(f\)</span> condensing a pretty messy expression. Compare this to your answer to (b). Why do you think <span class="math inline">\(f\)</span> is called ``climate gain?”</p>
+</section>
+</section>
+<section id="exercise-3" class="level3">
+<h3 class="anchored" data-anchor-id="exercise-3">Exercise 3</h3>
+<p>READING QUESTION HERE</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -438,15 +483,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../index.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Schedule</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
