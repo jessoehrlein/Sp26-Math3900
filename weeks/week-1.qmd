@@ -22,13 +22,12 @@ Welcome! This week focuses on getting oriented to the course and exploring the d
 
 📖  [**Required Reading:** The Quantum Mechanics of Greenhouse Gases](https://www.quantamagazine.org/the-quantum-mechanics-of-greenhouse-gases-20250915/)
 
-**Homework Problems and Reading Questions**
+[**Homework Problems and Reading Questions**](hws/hw-1.qmd)
 
 (need to figure out that link)
 
 ::: callout-caution
 # Submission
 
-Submit a screenshot of the completion page (the last page of the tutorial) to
-the Canvas assignment portal!
+Submit your work to the HW 1 assignment on Blackboard!
 :::
