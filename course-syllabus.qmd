@@ -1,11 +1,211 @@
 ---
-title: "Sp26-Math3900"
+title: 'MATH 3900: Mathematics Seminar - Mathematics of Climate'
+subtitle: "Spring 2026"
+format: 
+  html: 
+    self-contained: true
+    fontsize: 1em
+    mainfont: sans-serif
+    number-sections: true
+    number-depth: 2
+    table-of-contents: true
+    section-divs: true
+    code-block-bg: "#76b5c5"
+    highlight-style: monochrome
+editor: source
+execute: 
+  echo: false
+  warning: false
+  message: false
 ---
 
-This is a Quarto website.
+::: panel-tabset
+# Instructor Info
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+::: columns
+::: {.column width="50%"}
+**Instructor: Dr. Jessie Oehrlein** -- you can call me **Dr. Oehrlein** or **Dr. O**!
 
-```{r}
-1 + 1
-```
+**Email**: joehrlei\@fitchburgstate.edu
+
+**Office**: Edgerly 301E
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="40%"}
+![](images/headshot.jpg){fig-alt="A headshot of Dr. Oehrlein, in a blue shirt, on the Fitchburg State quad" width="60%"}
+:::
+:::
+
+# Class meetings
+
+**Room:** Percival 212
+
+**Times:**
+
+-   Friday 9:30 - 10:20 AM
+
+# Student Hours {#sec-OH}
+
++-----------------+-------------------------------------------------+
+| Day             | Time                                            |
++=================+=================================================+
+| Mondays         | 1:30pm -- 3:00pm                                |
++-----------------+-------------------------------------------------+
+| Thursdays       | 8:15am -- 9:15am                                |
++-----------------+-------------------------------------------------+
+| Fridays         | 11:45am -- 1:00pm                               |
++-----------------+-------------------------------------------------+
+
+I will typically hold student hours in my office (Edgerly 301E). If we're somewhere else, like the Edgerly 308 conference room, I'll leave a note on the whiteboard outside my office door!
+
+# Personal Meetings
+
+If you need to meet at another time or would like to meet individually or virtually, you can book a meeting [directly on my calendar](https://calendar.app.google/WrKKzrserrHq9y7J6).
+:::
+
+------------------------------------------------------------------------
+
+# Required Materials
+
+All materials for this course will be provided freely on a week-by-week basis.
+
+# What is this class?
+
+*Catalog Description*: The Seminar provides the opportunity for problem solving and research on one or more topics outside the core curriculum areas.
+
+This semester's seminar focuses on the mathematical and statistical tools used in modeling and analyzing the Earth system, with particular focus on dynamical systems, time series analysis, and evaluating extremes. The seminar will also focus on reading and communication in the mathematical sciences.
+
+## My course goals
+
+::: columns
+::: {.column width="45%"}
+**Mathematics of Climate**
+
+-   analyze dynamical systems that model climate by considering equilibria, stability, bifurcations, etc.
+
+-   use dimension reduction methods to study parts of the climate system
+
+-   use time series analysis, including ARIMA and spectral methods, to study climate indices over time
+
+-   evaluate climate extremes using extreme value theory and attribution theory
+:::
+
+::: {.column width="5%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+**Reading and Communicating Mathematics**
+
+-   summarize key ideas from mathematical and scientific writing for both popular and technical audiences
+
+-   write clear, concise, and correct mathematical solutions and statistical analyses
+
+-   introduce an audience of fellow students to a new topic in written, oral, and/or activity forms
+:::
+:::
+
+# Grade Breakdown {#sec-grades}
+
++--------------------------+----------------+----------------+----------------+----------------+
+|                          | A-level        | B-level        | C-level        | D-level        |
++==========================+================+================+================+================+
+| **Homeworks**            | 8 Satisfactory | 6 Satisfactory | 5 Satisfactory | 4 Satisfactory |
+|                          |                |                |                |                |
+| **(9 Total)**            |                |                |                |                |
++--------------------------+----------------+----------------+----------------+----------------+
+| **Paper Reading Guides** | 2 Complete     | 2 Complete     | 1 Complete     |                |
+|                          |                |                |                |                |
+| **(2 Total)**            |                |                |                |                |
++--------------------------+----------------+----------------+----------------+----------------+
+| **Final Project**        | Excellent      | Satisfactory   | Progressing    | Novice         |
++--------------------------+----------------+----------------+----------------+----------------+
+
+I will set + / - grades based on how close you are to the next higher (or lower) letter grade.
+
+------------------------------------------------------------------------
+
+# Well-being, Access, and Accommodations
+
+## What if I have accommodations or feel that accommodations would be beneficial to my learning?
+
+If you have any access needs that I can better support by changing some aspect of the class, please let me know! Even if you aren't sure exactly what you need, that's a conversation I want to have with you. That can be in person, over Google Meet, or via email. Please talk to me if you need accommodations for your disabilities. I honor self-diagnosis, and I want this course to be as accessible as possible.
+
+Disabled students may also officially register with Disability Services to get accommodations across courses and to figure out what kinds of accommodations might help you most! More information is available on the [Disability Services site](https://www.fitchburgstate.edu/student-support/disability-services) or in Hammond 303.
+
+## What if I can't arrange for childcare?
+
+If you are responsible for childcare on short notice, you are welcome to bring children to class with you. If you are a lactating parent, you many take breaks to feed your infant or express milk as needed. If I can support yo in navigating parenting, coursework, and other obligations in any way, please let me know.
+
+## Free On-Campus Support
+
+There are lots of free resources available on campus to support you in all aspects of college life, and I'm happy to help you find what would be useful to you! For example:
+
+-   The Falcon Bazaar in Hammond G-23 offers free food and personal care items, and also has professional clothing for events like an interview or presentation available.
+
+-   The Counseling Center in Hammond 317 offers free, confidential counseling to support you in dealing with stress, family concerns, relationship concerns, grief, depression, anxiety, and any other situation in which support would help you to better and more healthily cope. Information on making an appointment and on other available resources is at the [Counseling Center site](https://www.fitchburgstate.edu/student-support/health-and-wellness/counseling-services).
+
+-   Many other resources: If you need support but aren't sure what resources are available, check out the [Falcons Care Center](https://fitchburgstate.concerncenter.com/). You can search this site to figure out what is available! If you're nervous about reaching out to a particular office or group, I'm happy to help you connect, as well.
+
+# Attendance, Extensions, and Technology
+
+## What if I need to miss class?
+
+While attendance is not graded, class time gives you the best opportunities to engage with the material alongside your classmates and me. So plan to attend as much as you can! If you know in advance that you will miss a class, please let me know. I will work with you to make a plan that keeps your learning in the course moving forward.
+
+## What if I need to turn something in late?
+
+You are always allowed to ask for an extension by completing the [extension request form](https://docs.google.com/forms/d/e/1FAIpQLSf4fOUuutTobhIynt_b0DxsOxfnRI6NT6z9xKB-_bdq3_TKkg/viewform?usp=dialog). In most cases, I will grant such a request, and together we'll decide on a new deadline. This will generally be a date that you think is fair and feasible for you to complete the assignment.
+
+## Do I need to bring a computer to class?
+
+You are allowed to use technology in the classroom! In fact, we will often do so as part of in-class activities. Outside of those cases, I ask that devices be on silent or vibrate-only during class and that you minimize technology use for non-class related activities during class.
+
+# Expectations, Respect, and Integrity
+
+## Expectations
+
+Significant portions of this course involve group work and discussion in class. For everyone to learn best, I expect that you will:
+
+-   participate in class when you can
+
+-   listen to each other
+
+-   treat each other with respect
+
+-   represent your understanding and work honestly
+
+-   reflect on your learning and the course.
+
+You should also have expectations of me! In particular, I will work with you as you learn, be available to help you, listen to your thinking and treat you with respect, give constructive & timely feedback on your work, and consider and act on your feedback about the course.
+
+## Academic Honesty
+
+This course involves both individual and collaborative work. I expect you to honestly represent your own learning and work.
+
+You may work with other students in the course and may get help from me, tutors in the ACT Center, and peers. You may also look at resources for guidance. However, any solutions you submit should be in your own words and reflect your own understanding, and you must acknowledge anyone you worked with, anyone who helped you, or any resource you use.
+
+If you use generative AI (such as ChatGPT, Gemini, Claude, etc.), please tell me what you asked/searched, and what response was given, or otherwise summarize how you used the tool.
+
+# Course Organization {#sec-schedule}
+
+This class is organized into four main sections.
+
+## Unit 1: Dynamical Systems (Weeks 1-7)
+
+The first half of the course is about how we describe the climate system using differential equations and then some of the tools we can use to analyze those equations.
+
+## Unit 2: Climate Indices Over Time (Weeks 8-10)
+
+This unit focuses on how we describe what is happening over time in different parts of the climate. We'll look at empirical orthogonal functions, a dimension reduction tool that lets us more succinctly describe parts of the climate system, and then we'll use different methods from time series analysis to consider the climate indices we calculate over time.
+
+## Unit 3: Evaluating Extremes (Weeks 10-12)
+
+In this unit, we will look at different ways to decide how extreme an event was and how that might be changing. We'll use statistical tools from extreme value theory as well as a couple of different approaches under the umbrella of attribution theory.
+
+## Unit 4: Final Projects (Week 13-Final)
+
+In the final part of the course, you will lead! Each student will do a final project either exploring a new math & climate topic or extending/applying something we've covered in a new way. You will each have 25-30 minutes in class or our finals period to lead the class in exploring that topic.
