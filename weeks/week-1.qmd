@@ -1,11 +1,32 @@
 ---
-title: "Sp26-Math3900"
+title: 'Week One: Energy Balance Models'
+format: 
+  html: 
+    number-sections: true
+    number-depth: 2
+    section-divs: true
+editor: source
+execute: 
+  echo: true
+  warning: false
+  message: false
 ---
 
-This is a Quarto website.
+Welcome! This week focuses on getting oriented to the course and exploring the differential equations that we use to model Earth's energy balance.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+# In Class
 
-```{r}
-1 + 1
-```
+(slides and activity will be here)
+
+# Homework 1 -- Due Friday, Jan. 30 by the start of class
+
+📖  [**Required Reading:** The Quantum Mechanics of Greenhouse Gases](https://www.quantamagazine.org/the-quantum-mechanics-of-greenhouse-gases-20250915/)
+
+[**Homework Problems and Reading Questions**](hws/hw-1.qmd)
+
+::: callout-caution
+# Submission
+
+Submit a screenshot of the completion page (the last page of the tutorial) to
+the Canvas assignment portal!
+:::
