@@ -16,7 +16,7 @@ Due:
 
 # Introduction
 
-WORDS
+This homework extends ideas about energy balance models. Next week, we'll talk more about the idea of equilibrium and what happens when the system moves just slightly out of equilibrium.
 
 # Exercises
 
@@ -34,7 +34,7 @@ Satellite data suggests that blackbody radiation might not be the best model for
 
 #### Part (a)
 
-Modify Model 1 to use this form for Earth's outgoing radiation instead, and find an expression for surface temperature in this case. We'll call this temperature $T_0$.
+Modify Model 1 to use this form for Earth's outgoing radiation instead, and find an expression for equilibrium surface temperature in this case. We'll call this temperature $T_0$.
 
 #### Part (b)
 
@@ -55,6 +55,10 @@ where $\alpha_0, A_0, B_0$ are the values when $T = T_0$. Find an expression rel
 
 With some wrangling of terms, you can get this to look like $$B_0 \Delta T = f (1- \alpha_0) \Delta S,$$ with $f$ condensing a pretty messy expression. Compare this to your answer to (b). Why do you think $f$ is called \`\`climate gain?"
 
-### Exercise 3
+### Exercise 3: Reading Questions
 
-READING QUESTION HERE
+📖 [**Answer these questions based on the reading:** The Quantum Mechanics of Greenhouse Gases](https://www.quantamagazine.org/the-quantum-mechanics-of-greenhouse-gases-20250915/)
+
+What two ideas stood out to you most from the greenhouse gas article?
+
+How were the key ideas of the article related to the idea of a multi-layer energy balance model?
