@@ -1,0 +1,34 @@
+---
+title: 'Week Two: Equilibria and Stability'
+format: 
+  html: 
+    number-sections: true
+    number-depth: 2
+    section-divs: true
+editor: source
+execute: 
+  echo: true
+  warning: false
+  message: false
+---
+
+Welcome! This week focuses on exploring dynamical systems and their key properties.
+
+# In Class
+
+[Manabe & Strickler diagrams](https://docs.google.com/presentation/d/1ajCfywquBsupzKSeJIY2M9EY6spSyujAfqxVHB0wqko/edit?usp=sharing)
+
+[Dynamical Systems Problems](wk2-problems.qmd)
+
+
+# Homework 1 -- Due Friday, Feb. 6 by the start of class
+
+📖  [**Required Reading:** The Math of Catastrophe](https://www.quantamagazine.org/the-math-of-climate-change-tipping-points-20250915/)
+
+[**Homework Problems and Reading Questions**](hws/hw-2.qmd)
+
+::: callout-caution
+# Submission
+
+Submit your work to the HW 2 assignment on Blackboard!
+:::

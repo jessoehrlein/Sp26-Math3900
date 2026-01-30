@@ -1,0 +1,34 @@
+---
+title: "HW 2: Equilibria and Stability"
+execute:
+  freeze: auto
+  echo: true
+  eval: false
+  warning: false
+  message: false
+---
+
+::: callout-important
+Due:
+
+-   Friday, February 6, 9:30 AM
+:::
+
+# Introduction
+
+
+# Exercises
+
+------------------------------------------------------------------------
+
+### Exercise 1: 
+
+
+### Exercise 2: 
+
+
+### Exercise 3: Reading Questions
+
+📖 [**Answer these questions based on the reading:** The Math of Catastrophe](https://www.quantamagazine.org/the-math-of-climate-change-tipping-points-20250915/)
+
+(questions to come)
