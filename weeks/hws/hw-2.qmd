@@ -16,19 +16,55 @@ Due:
 
 # Introduction
 
+This homework explores equilibrium points (also called fixed points) and stability in one-dimensional **dynamical systems**. (If you'd like to and have time, feel free to look at the two-dimensional challenge problems.) Traditionally, the field of dynamical systems uses Newton's notation for a derivative: $\dot x$ is the first derivative of $x$, $\ddot x$ is the second derivative, and so forth.
 
 # Exercises
 
 ------------------------------------------------------------------------
 
-### Exercise 1: 
+### Exercise 1: Equilibria and Stability in 1D Maps
 
+Choose three of the dynamical systems below. Find all the equilibrium points, and figure out if they're stable, unstable, or conditionally stable (stable from one direction and not the other).
 
-### Exercise 2: 
+-   $\dot x = x^2 - 1$
 
+-   $\dot x = \sin x$
+
+-   $\dot x = x - \cos x$
+
+-   $\dot N = rN\left(1 - \frac{N}{K}\right)$ for $r, N > 0$
+
+-   $\dot N = a N \ln(bN)$ for $a,b > 0$
+
+-   $\dot x = ax - x^3$, for $a \in \mathbb{R}$ (explore different values of $a$ here)
+
+-   $\dot x = 1 + \frac{1}{2} \cos x$
+
+### Exercise 2: Linear Stability
+
+You'll keep working with the dynamical systems you looked at in Exercise 1. For notation, let $f(x)$ (or the appropriate other variable) be the right side of the equation. In other words, $\dot x = f(x)$.
+
+For each equilibrium point $x*$ that you found in Exercise 1, find the derivative $f'(x*)$. What do you notice about this value and stability of $x*$? Try to explain what's going on here
 
 ### Exercise 3: Reading Questions
 
 📖 [**Answer these questions based on the reading:** The Math of Catastrophe](https://www.quantamagazine.org/the-math-of-climate-change-tipping-points-20250915/)
 
-(questions to come)
+-   What two ideas stood out to you most from the tipping points article?
+
+-   Based on the article, how would you describe a bifurcation?
+
+### Challenge Exercise: 2D Flows
+
+Dynamical systems can have multiple variables we're interested in. Here are a couple systems to explore. What kinds of behaviors or patterns are there? What aspects are stable or unstable?
+
+In this first one, let $\omega$ be a constant real parameter: $$\begin{align*}
+\dot x &= v \\
+\dot v &= - \omega^2 x
+\end{align*}$$ (Note: this one is really $\ddot x = - \omega^2 x$, but it's more convenient to write things as just first derivatives!)
+
+In this second one, let $a$ be a constant real parameter (strongly recommend exploring different values of $a$): $$\begin{align*}
+\dot x &= ax \\
+\dot y &= -y
+\end{align*}
+$$

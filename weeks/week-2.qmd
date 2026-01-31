@@ -16,14 +16,29 @@ Welcome! This week focuses on exploring dynamical systems and their key properti
 
 # In Class
 
-[Manabe & Strickler diagrams](https://docs.google.com/presentation/d/1ajCfywquBsupzKSeJIY2M9EY6spSyujAfqxVHB0wqko/edit?usp=sharing)
+## Brief Intro to Equilibria and Stability
 
-[Dynamical Systems Problems](wk2-problems.qmd)
+Let's consider a different variation on the energy balance models. We'll let the albedo $\alpha$ be a function of surface temperature:
 
+$$\alpha (T_s) = 0.5 - 0.2 \tanh\left(\frac{T_s - 265}{10}\right).$$ This roughly gives us a step function where $\alpha \approx 0.7$ for $T_s < 250$ K (high albedo/reflectivity when the Earth is covered in ice) and $\alpha \approx 0.3$ for $T_s > 250$ (lower albedo when there's more vegetation, ocean, etc.).
+
+We'll use an emissivity $\epsilon \approx 0.6$ to adjust the amount of longwave Earth is radiating and kind of account for an atmosphere without explicitly including one:
+
+$$C \frac{dT_s}{dt} = \pi R^2 (1 - \alpha(T_s)) S_0 - \epsilon \sigma T_s^4.$$
+
+When this is in equilibrium, we get:
+
+$$\frac{1}{4} (1- \alpha(T_s)) S_0 = \epsilon \sigma T_s^4.$$ We can't solve this analytically, so we look at [a graph](https://www.desmos.com/calculator/lyrfw3bfwh) (thank you, Aidan!). The equilibrium points are around 234.5 K, 249.6 K, and 289.5 K.
+
+From there, we can think about what happens if we move slightly away from one of those equilibrium points. Will the trajectory of $T_s$ over time take us back to the original equilibrium point, towards one of the others, off to infinity?
+
+In this case, the easiest way to judge this is by thinking through the graph. If we're at the 234.5 K equilibrium point and move to a slightly lower temperature (to the left in the graph), we can see from the graph that the part of the equation corresponding to incoming solar radiation is larger than the outgoing longwave. Based on our differential equation, that will tend to increase the temperature, so we'll go back to that equilibrium point. If we move slightly to the right, now the outgoing longwave is larger, decreasing our temperature, so back to the original equilibrium point we go. We call this a **stable** equilibrium.
+
+If we look at something similar with the 249.6 K equilibrium point, this time the same logic makes us move away from that equilibrium point towards the 234.5 K or 289.5 K ones. This is an **unstable** equilibrium.
 
 # Homework 1 -- Due Friday, Feb. 6 by the start of class
 
-📖  [**Required Reading:** The Math of Catastrophe](https://www.quantamagazine.org/the-math-of-climate-change-tipping-points-20250915/)
+📖 [**Required Reading:** The Math of Catastrophe](https://www.quantamagazine.org/the-math-of-climate-change-tipping-points-20250915/)
 
 [**Homework Problems and Reading Questions**](hws/hw-2.qmd)
 
