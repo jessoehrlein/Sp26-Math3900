@@ -32,7 +32,7 @@ Choose three of the dynamical systems below. Find all the equilibrium points, an
 
 -   $\dot x = x - \cos x$
 
--   $\dot N = rN\left(1 - \frac{N}{K}\right)$ for $r, N > 0$
+-   $\dot N = rN\left(1 - \frac{N}{K}\right)$ for $r, K > 0$
 
 -   $\dot N = a N \ln(bN)$ for $a,b > 0$
 
@@ -44,7 +44,7 @@ Choose three of the dynamical systems below. Find all the equilibrium points, an
 
 You'll keep working with the dynamical systems you looked at in Exercise 1. For notation, let $f(x)$ (or the appropriate other variable) be the right side of the equation. In other words, $\dot x = f(x)$.
 
-For each equilibrium point $x*$ that you found in Exercise 1, find the derivative $f'(x*)$. What do you notice about this value and stability of $x*$? Try to explain what's going on here
+For each equilibrium point $x^*$ that you found in Exercise 1, find the derivative $f'(x^*)$. What do you notice about this value and stability of $x^*$? Try to explain what's going on here
 
 ### Exercise 3: Reading Questions
 
