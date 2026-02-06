@@ -36,7 +36,7 @@ In this case, the easiest way to judge this is by thinking through the graph. If
 
 If we look at something similar with the 249.6 K equilibrium point, this time the same logic makes us move away from that equilibrium point towards the 234.5 K or 289.5 K ones. This is an **unstable** equilibrium.
 
-# Homework 1 -- Due Friday, Feb. 6 by the start of class
+# Homework 2 -- Due Friday, Feb. 6 by the start of class
 
 📖 [**Required Reading:** The Math of Catastrophe](https://www.quantamagazine.org/the-math-of-climate-change-tipping-points-20250915/)
 

@@ -1,0 +1,45 @@
+---
+title: "HW 3: Bifurcations"
+execute:
+  freeze: auto
+  echo: true
+  eval: false
+  warning: false
+  message: false
+---
+
+::: callout-important
+Due:
+
+-   Friday, February 13, 9:30 AM
+:::
+
+# Introduction
+
+(this will be some words about bifurcations)
+
+# Exercises
+
+------------------------------------------------------------------------
+
+### Exercise 1: 
+
+
+
+### Exercise 2: 
+
+
+
+### Exercise 3: Reading Questions
+
+Answer these questions based on one of the two following readings:
+
+📖 [**Reading Option 1:** How Climate Scientists Saw the Future](https://www.quantamagazine.org/how-climate-scientists-saw-the-future-before-it-arrived-20250915/)
+
+🎧[**Listening/Reading Option 2:** Modeling Paleoclimates](https://www.imsi.institute/podcast/matt-huber-on-modeling-paleoclimates/)
+
+-   What two ideas stood out to you most from your reading?
+
+-   What kinds of mathematical or statistical considerations are there in modeling the past, present, or future Earth system?
+
+### Challenge Exercise: 

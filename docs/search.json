@@ -102,7 +102,7 @@
     "href": "index.html",
     "title": "MATH 3900: Mathematics Seminar - Mathematics of Climate",
     "section": "",
-    "text": "This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses, with all changes documented here.\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nTopic\nSlides\nActivity\nHomework & Reading\nProject\n\n\n\n\n1\nJan 23\nIntro and Earth Balance Models\n\n📋\n✍\n\n\n\n2\nJan 30\nEquilibria & Stability\n\n📋\n✍\n\n\n\n3\nFeb 6\nBifurcations\n🖥\n\n\n\n\n\n4\nFeb 13\nThermohaline Circulation\n\n\n\n\n\n\n5\nFeb 20\n1D Chaos\n\n\n\n\n\n\n6\nFeb 27\n“Period 3 Implies Chaos” preparation\n\n\n\n\n\n\n7\nMar 6\n“Period 3 Implies Chaos”\n\n\n\n\n\n\n8\nMar 20\nClimate indices & Empirical Orthogonal Functions\n\n\n\n\n\n\n9\nMar 27\nTime Series Analysis\n\n\n\n\n\n\n10\nApr 3\nExtreme Value Theory\n\n\n\n\n\n\n11\nApr 10\nAttribution Theory, Work Time\n\n\n\n\n\n\n12\nApr 17\nAttribution Theory\n\n\n\n\n\n\n13\nApr 24\n9:30 - 10:45\nWork Time, Final Presentation\n\n\n\n\n\n\n14\nMay 1\n9:30 - 10:45\nFinal Presentations\n\n\n\n\n\n\nFinal\nMon. May 12, 12:20 - 2:20\nFinal Presentations"
+    "text": "This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses, with all changes documented here.\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nTopic\nSlides\nActivity\nHomework & Reading\nProject\n\n\n\n\n1\nJan 23\nIntro and Earth Balance Models\n\n📋\n✍\n\n\n\n2\nJan 30\nEquilibria & Stability\n\n📋\n✍\n\n\n\n3\nFeb 6\nBifurcations\n\n📋\n✍\n\n\n\n4\nFeb 13\nThermohaline Circulation\n\n\n\n\n\n\n5\nFeb 20\n1D Chaos\n\n\n\n\n\n\n6\nFeb 27\n“Period 3 Implies Chaos” preparation\n\n\n\n\n\n\n7\nMar 6\n“Period 3 Implies Chaos”\n\n\n\n\n\n\n8\nMar 20\nClimate indices & Empirical Orthogonal Functions\n\n\n\n\n\n\n9\nMar 27\nTime Series Analysis\n\n\n\n\n\n\n10\nApr 3\nExtreme Value Theory\n\n\n\n\n\n\n11\nApr 10\nAttribution Theory, Work Time\n\n\n\n\n\n\n12\nApr 17\nAttribution Theory\n\n\n\n\n\n\n13\nApr 24\n9:30 - 10:45\nWork Time, Final Presentation\n\n\n\n\n\n\n14\nMay 1\n9:30 - 10:45\nFinal Presentations\n\n\n\n\n\n\nFinal\nMon. May 12, 12:20 - 2:20\nFinal Presentations"
   },
   {
     "objectID": "weeks/hws/hw-1.html",
@@ -145,5 +145,26 @@
     "title": "Week Two: Equilibria and Stability",
     "section": "1.1 Brief Intro to Equilibria and Stability",
     "text": "1.1 Brief Intro to Equilibria and Stability\nLet’s consider a different variation on the energy balance models. We’ll let the albedo \\(\\alpha\\) be a function of surface temperature:\n\\[\\alpha (T_s) = 0.5 - 0.2 \\tanh\\left(\\frac{T_s - 265}{10}\\right).\\] This roughly gives us a step function where \\(\\alpha \\approx 0.7\\) for \\(T_s &lt; 250\\) K (high albedo/reflectivity when the Earth is covered in ice) and \\(\\alpha \\approx 0.3\\) for \\(T_s &gt; 250\\) (lower albedo when there’s more vegetation, ocean, etc.).\nWe’ll use an emissivity \\(\\epsilon \\approx 0.6\\) to adjust the amount of longwave Earth is radiating and kind of account for an atmosphere without explicitly including one:\n\\[C \\frac{dT_s}{dt} = \\pi R^2 (1 - \\alpha(T_s)) S_0 - \\epsilon \\sigma T_s^4.\\]\nWhen this is in equilibrium, we get:\n\\[\\frac{1}{4} (1- \\alpha(T_s)) S_0 = \\epsilon \\sigma T_s^4.\\] We can’t solve this analytically, so we look at a graph (thank you, Aidan!). The equilibrium points are around 234.5 K, 249.6 K, and 289.5 K.\nFrom there, we can think about what happens if we move slightly away from one of those equilibrium points. Will the trajectory of \\(T_s\\) over time take us back to the original equilibrium point, towards one of the others, off to infinity?\nIn this case, the easiest way to judge this is by thinking through the graph. If we’re at the 234.5 K equilibrium point and move to a slightly lower temperature (to the left in the graph), we can see from the graph that the part of the equation corresponding to incoming solar radiation is larger than the outgoing longwave. Based on our differential equation, that will tend to increase the temperature, so we’ll go back to that equilibrium point. If we move slightly to the right, now the outgoing longwave is larger, decreasing our temperature, so back to the original equilibrium point we go. We call this a stable equilibrium.\nIf we look at something similar with the 249.6 K equilibrium point, this time the same logic makes us move away from that equilibrium point towards the 234.5 K or 289.5 K ones. This is an unstable equilibrium."
+  },
+  {
+    "objectID": "weeks/week-3.html",
+    "href": "weeks/week-3.html",
+    "title": "Week Three: Bifurcations",
+    "section": "",
+    "text": "Welcome! This week focuses on how dynamical systems change as we change a parameter."
+  },
+  {
+    "objectID": "weeks/week-3.html#systems-to-explore",
+    "href": "weeks/week-3.html#systems-to-explore",
+    "title": "Week Three: Bifurcations",
+    "section": "1.1 Systems to Explore",
+    "text": "1.1 Systems to Explore\n\\(\\begin{align*} \\dot{x} &= r + x^2 \\\\ \\dot{x} &= r - x^2 \\\\ \\dot{x} &= rx - x^2 \\\\ \\dot{x} &= rx - x^3 \\\\ \\dot{x} &= -x + \\beta \\tanh(x) \\\\ \\dot{x} &= rx + x^3 \\\\ \\dot{x} &= rx + x^3 - x^5 \\end{align*}\\)"
+  },
+  {
+    "objectID": "weeks/hws/hw-3.html",
+    "href": "weeks/hws/hw-3.html",
+    "title": "HW 3: Bifurcations",
+    "section": "",
+    "text": "Important\n\n\n\nDue:\n\nFriday, February 13, 9:30 AM\n\n\n\n\nIntroduction\n(this will be some words about bifurcations)\n\n\nExercises\n\n\nExercise 1:\n\n\nExercise 2:\n\n\nExercise 3: Reading Questions\nAnswer these questions based on one of the two following readings:\n📖 Reading Option 1: How Climate Scientists Saw the Future\n🎧Listening/Reading Option 2: Modeling Paleoclimates\n\nWhat two ideas stood out to you most from your reading?\nWhat kinds of mathematical or statistical considerations are there in modeling the past, present, or future Earth system?\n\n\n\nChallenge Exercise:"
   }
 ]
