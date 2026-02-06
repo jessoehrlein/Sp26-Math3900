@@ -58,6 +58,8 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -169,10 +171,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
   <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">Exercises</a>
   <ul class="collapse">
-  <li><a href="#exercise-1" id="toc-exercise-1" class="nav-link" data-scroll-target="#exercise-1">Exercise 1:</a></li>
+  <li><a href="#exercise-1-exploring-bifurcations" id="toc-exercise-1-exploring-bifurcations" class="nav-link" data-scroll-target="#exercise-1-exploring-bifurcations">Exercise 1: Exploring Bifurcations</a></li>
   <li><a href="#exercise-2" id="toc-exercise-2" class="nav-link" data-scroll-target="#exercise-2">Exercise 2:</a></li>
   <li><a href="#exercise-3-reading-questions" id="toc-exercise-3-reading-questions" class="nav-link" data-scroll-target="#exercise-3-reading-questions">Exercise 3: Reading Questions</a></li>
-  <li><a href="#challenge-exercise" id="toc-challenge-exercise" class="nav-link" data-scroll-target="#challenge-exercise">Challenge Exercise:</a></li>
+  <li><a href="#challenge-exercise" id="toc-challenge-exercise" class="nav-link" data-scroll-target="#challenge-exercise">Challenge Exercise</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/jessoehrlein/Sp26-Math3900/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
@@ -220,11 +222,41 @@ Important
 <section id="exercises" class="level1">
 <h1>Exercises</h1>
 <hr>
-<section id="exercise-1" class="level3">
-<h3 class="anchored" data-anchor-id="exercise-1">Exercise 1:</h3>
+<section id="exercise-1-exploring-bifurcations" class="level3">
+<h3 class="anchored" data-anchor-id="exercise-1-exploring-bifurcations">Exercise 1: Exploring Bifurcations</h3>
+<section id="part-a" class="level4">
+<h4 class="anchored" data-anchor-id="part-a">Part (a)</h4>
+<p>Abby started looking at <span class="math inline">\(\dot{x} = rx - x^2\)</span>. (You can see the beginning of her work in the drive linked on the Week 2 page.)</p>
+<p>Finish this up: what equilibrium points are there for which values of <span class="math inline">\(x\)</span>? What is their stability?</p>
+<p>Then draw the bifurcation diagram (<span class="math inline">\(r\)</span> on the horizontal axis, equilibrium values <span class="math inline">\(x^*\)</span> on the vertical axis).</p>
+</section>
+<section id="types-of-bifurcations" class="level4">
+<h4 class="anchored" data-anchor-id="types-of-bifurcations">Types of Bifurcations</h4>
+<p>For these 1D systems, a bifurcation is a change in a parameter (like <span class="math inline">\(r\)</span> above) that changes the behavior of the system, like number of equilibria or their stability.</p>
+<p>A <strong>saddle-node</strong> bifurcation (also called a fold or blue sky bifurcation) is a bifurcation in which two equilibrium points collide and annihilate each other. From class, <span class="math inline">\(\dot{x} = r + x^2\)</span> was one of these.</p>
+<p>A <strong>transcritical</strong> bifurcation is a bifurcation in which the equilibrium points always exist but they exchange stability at some value of the parameter. Part (a) was one of these.</p>
+<p>A <strong>pitchfork</strong> bifurcation is a transition from one equilibrium point to three equilibrium points. From class, <span class="math inline">\(\dot{x} = rx - x^3\)</span> and <span class="math inline">\(\dot{x} = rx + x^3\)</span> were this kind.</p>
+</section>
+<section id="part-b" class="level4">
+<h4 class="anchored" data-anchor-id="part-b">Part (b)</h4>
+<p>For each of these systems, find their equilibrium points across all values of the parameter and classify their stability. Then sketch the bifurcation diagram and classify the type of bifurcation.</p>
+<ul>
+<li><span class="math inline">\(\dot{x} = x + \frac{rx}{1+x^2}\)</span></li>
+<li><span class="math inline">\(\dot{x} = 1 + rx + x^2\)</span></li>
+<li><span class="math inline">\(\dot{x} = r + x - x^3\)</span></li>
+</ul>
+</section>
 </section>
 <section id="exercise-2" class="level3">
 <h3 class="anchored" data-anchor-id="exercise-2">Exercise 2:</h3>
+<p>The last system from Exercise 1, <span class="math inline">\(\dot{x} = r + x - x^3\)</span>, exhibits interesting behavior called <strong>hysteresis</strong>. It will help throughout this to look at your bifurcation diagram from Exercise 1.</p>
+<ul>
+<li>Start with <span class="math inline">\(r = -1\)</span>. What (approximately) is the equilibrium point? What is its stability?</li>
+<li>Take that equilibrium point as your initial <span class="math inline">\(x\)</span> value. Imagine slowly decreasing <span class="math inline">\(r\)</span> to 0. When <span class="math inline">\(r = 0\)</span>, what equilibrium value do you end up at and why?</li>
+<li>Now slowly increase <span class="math inline">\(r\)</span> to 0.5. What equilibrium value do you end up at here, and why?</li>
+<li>Finally, slowly decrease <span class="math inline">\(r\)</span> back to 0. What equilibrium value are you at now?</li>
+</ul>
+<p>The system involving an albedo of either about 0.3 or 0.7 that we looked at in class in Week 2 behaves in a similar way. How does this relate to recovery after a tipping point (like Earth freezing over in the albedo case)?</p>
 </section>
 <section id="exercise-3-reading-questions" class="level3">
 <h3 class="anchored" data-anchor-id="exercise-3-reading-questions">Exercise 3: Reading Questions</h3>
@@ -237,7 +269,8 @@ Important
 </ul>
 </section>
 <section id="challenge-exercise" class="level3">
-<h3 class="anchored" data-anchor-id="challenge-exercise">Challenge Exercise:</h3>
+<h3 class="anchored" data-anchor-id="challenge-exercise">Challenge Exercise</h3>
+<p>Another system to look at: what’s happening with <span class="math inline">\(\dot{x} = rx - \sin(x)\)</span>?</p>
 
 
 </section>

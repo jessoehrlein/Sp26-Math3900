@@ -22,13 +22,43 @@ Due:
 
 ------------------------------------------------------------------------
 
-### Exercise 1: 
+### Exercise 1: Exploring Bifurcations
 
+#### Part (a)
+Abby started looking at $\dot{x} = rx - x^2$. (You can see the beginning of her work in the drive linked on the Week 2 page.) 
 
+Finish this up: what equilibrium points are there for which values of $x$? What is their stability?
+
+Then draw the bifurcation diagram ($r$ on the horizontal axis, equilibrium values $x^*$ on the vertical axis).
+
+#### Types of Bifurcations
+
+For these 1D systems, a bifurcation is a change in a parameter (like $r$ above) that changes the behavior of the system, like number of equilibria or their stability.
+
+A **saddle-node** bifurcation (also called a fold or blue sky bifurcation) is a bifurcation in which two equilibrium points collide and annihilate each other. From class, $\dot{x} = r + x^2$ was one of these.
+
+A **transcritical** bifurcation is a bifurcation in which the equilibrium points always exist but they exchange stability at some value of the parameter. Part (a) was one of these.
+
+A **pitchfork** bifurcation is a transition from one equilibrium point to three equilibrium points. From class, $\dot{x} = rx - x^3$ and $\dot{x} = rx + x^3$ were this kind.
+
+#### Part (b)
+
+For each of these systems, find their equilibrium points across all values of the parameter and classify their stability. Then sketch the bifurcation diagram and classify the type of bifurcation.
+
+- $\dot{x} = x + \frac{rx}{1+x^2}$
+- $\dot{x} = 1 + rx + x^2$
+- $\dot{x} = r + x - x^3$
 
 ### Exercise 2: 
 
+The last system from Exercise 1, $\dot{x} = r + x - x^3$, exhibits interesting behavior called **hysteresis**. It will help throughout this to look at your bifurcation diagram from Exercise 1.
 
+- Start with $r = -1$. What (approximately) is the equilibrium point? What is its stability?
+- Take that equilibrium point as your initial $x$ value. Imagine slowly decreasing $r$ to 0. When $r = 0$, what equilibrium value do you end up at and why?
+- Now slowly increase $r$ to 0.5. What equilibrium value do you end up at here, and why?
+- Finally, slowly decrease $r$ back to 0. What equilibrium value are you at now?
+
+The system involving an albedo of either about 0.3 or 0.7 that we looked at in class in Week 2 behaves in a similar way. How does this relate to recovery after a tipping point (like Earth freezing over in the albedo case)?
 
 ### Exercise 3: Reading Questions
 
@@ -42,4 +72,6 @@ Answer these questions based on one of the two following readings:
 
 -   What kinds of mathematical or statistical considerations are there in modeling the past, present, or future Earth system?
 
-### Challenge Exercise: 
+### Challenge Exercise
+
+Another system to look at: what's happening with $\dot{x} = rx - \sin(x)$?

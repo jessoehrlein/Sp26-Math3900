@@ -28,6 +28,8 @@ $\begin{align*}
 \dot{x} &= rx + x^3 - x^5
 \end{align*}$
 
+Photos of work on HW 2 problems and some of these problems are in [this Google Drive](https://drive.google.com/drive/folders/1TsDyQUJWIOOID0WpvvRNTjEB-qankk7r?usp=sharing).
+
 # Homework 3 -- Due Friday, Feb. 13 by the start of class
 
 📖 [**Reading Option 1:** How Climate Scientists Saw the Future](https://www.quantamagazine.org/how-climate-scientists-saw-the-future-before-it-arrived-20250915/)
