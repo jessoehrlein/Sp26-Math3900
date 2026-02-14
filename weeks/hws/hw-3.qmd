@@ -14,10 +14,6 @@ Due:
 -   Friday, February 13, 9:30 AM
 :::
 
-# Introduction
-
-(this will be some words about bifurcations)
-
 # Exercises
 
 ------------------------------------------------------------------------
@@ -25,7 +21,8 @@ Due:
 ### Exercise 1: Exploring Bifurcations
 
 #### Part (a)
-Abby started looking at $\dot{x} = rx - x^2$. (You can see the beginning of her work in the drive linked on the Week 2 page.) 
+
+Abby started looking at $\dot{x} = rx - x^2$. (You can see the beginning of her work in the drive linked on the Week 2 page.)
 
 Finish this up: what equilibrium points are there for which values of $x$? What is their stability?
 
@@ -45,18 +42,18 @@ A **pitchfork** bifurcation is a transition from one equilibrium point to three 
 
 For each of these systems, find their equilibrium points across all values of the parameter and classify their stability. Then sketch the bifurcation diagram and classify the type of bifurcation.
 
-- $\dot{x} = x + \frac{rx}{1+x^2}$
-- $\dot{x} = 1 + rx + x^2$
-- $\dot{x} = r + x - x^3$
+-   $\dot{x} = x + \frac{rx}{1+x^2}$
+-   $\dot{x} = 1 + rx + x^2$
+-   $\dot{x} = r + x - x^3$
 
-### Exercise 2: 
+### Exercise 2:
 
 The last system from Exercise 1, $\dot{x} = r + x - x^3$, exhibits interesting behavior called **hysteresis**. It will help throughout this to look at your bifurcation diagram from Exercise 1.
 
-- Start with $r = -1$. What (approximately) is the equilibrium point? What is its stability?
-- Take that equilibrium point as your initial $x$ value. Imagine slowly decreasing $r$ to 0. When $r = 0$, what equilibrium value do you end up at and why?
-- Now slowly increase $r$ to 0.5. What equilibrium value do you end up at here, and why?
-- Finally, slowly decrease $r$ back to 0. What equilibrium value are you at now?
+-   Start with $r = -1$. What (approximately) is the equilibrium point? What is its stability?
+-   Take that equilibrium point as your initial $x$ value. Imagine slowly decreasing $r$ to 0. When $r = 0$, what equilibrium value do you end up at and why?
+-   Now slowly increase $r$ to 0.5. What equilibrium value do you end up at here, and why?
+-   Finally, slowly decrease $r$ back to 0. What equilibrium value are you at now?
 
 The system involving an albedo of either about 0.3 or 0.7 that we looked at in class in Week 2 behaves in a similar way. How does this relate to recovery after a tipping point (like Earth freezing over in the albedo case)?
 

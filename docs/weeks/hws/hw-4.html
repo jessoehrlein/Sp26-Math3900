@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Math 3900 - HW 3: Bifurcations</title>
+<title>Math 3900 - HW 4: 1D Discrete Maps</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -174,12 +174,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#exercises" id="toc-exercises" class="nav-link active" data-scroll-target="#exercises">Exercises</a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">Exercises</a>
   <ul class="collapse">
-  <li><a href="#exercise-1-exploring-bifurcations" id="toc-exercise-1-exploring-bifurcations" class="nav-link" data-scroll-target="#exercise-1-exploring-bifurcations">Exercise 1: Exploring Bifurcations</a></li>
-  <li><a href="#exercise-2" id="toc-exercise-2" class="nav-link" data-scroll-target="#exercise-2">Exercise 2:</a></li>
-  <li><a href="#exercise-3-reading-questions" id="toc-exercise-3-reading-questions" class="nav-link" data-scroll-target="#exercise-3-reading-questions">Exercise 3: Reading Questions</a></li>
-  <li><a href="#challenge-exercise" id="toc-challenge-exercise" class="nav-link" data-scroll-target="#challenge-exercise">Challenge Exercise</a></li>
+  <li><a href="#exercise-1-exploring-1d-maps" id="toc-exercise-1-exploring-1d-maps" class="nav-link" data-scroll-target="#exercise-1-exploring-1d-maps">Exercise 1: Exploring 1D maps</a></li>
+  <li><a href="#exercise-2-trajectories-and-cobweb-diagrams" id="toc-exercise-2-trajectories-and-cobweb-diagrams" class="nav-link" data-scroll-target="#exercise-2-trajectories-and-cobweb-diagrams">Exercise 2: Trajectories and Cobweb Diagrams</a></li>
+  <li><a href="#exercise-3-periodic-points" id="toc-exercise-3-periodic-points" class="nav-link" data-scroll-target="#exercise-3-periodic-points">Exercise 3: Periodic Points</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/jessoehrlein/Sp26-Math3900/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
@@ -189,7 +189,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">HW 3: Bifurcations</h1>
+<h1 class="title">HW 4: 1D Discrete Maps</h1>
 </div>
 
 
@@ -216,62 +216,63 @@ Important
 <div class="callout-body-container callout-body">
 <p>Due:</p>
 <ul>
-<li>Friday, February 13, 9:30 AM</li>
+<li>Friday, February 20, 9:30 AM</li>
 </ul>
 </div>
 </div>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>In class, we briefly looked at discrete one-dimensional maps written in terms of the difference in <span class="math inline">\(x\)</span>, like <span class="math inline">\(\Delta x = x\)</span>, where <span class="math inline">\(\Delta x\)</span> told us what to add to <span class="math inline">\(x_n\)</span> to get to <span class="math inline">\(x_{n+1}\)</span>. For example, with this map, when we started with <span class="math inline">\(x_0 = 1\)</span>, we found $\begin{align<em>} x_1 &amp;= x_0 + x = 1 + 1 = 2, \ x_2 &amp;= x_1 + x = 2 + 2 = 4, \ x_3 &amp;= x_2 + x = 4 + 4 = 8, $\begin{align</em>} and so forth.</p>
+<p>The more typical way to write these discrete 1D maps is in terms of <span class="math inline">\(x_{n+1}\)</span>. So the map above, for instance, would be <span class="math inline">\(x_{n+1} = 2x_n\)</span>.</p>
+<p>We can still look for fixed points: values of <span class="math inline">\(x_n\)</span> such that <span class="math inline">\(x_{n+1} = x_n\)</span>. We can also still look at their stability – if we’re just a little bit away from that fixed point value <span class="math inline">\(x^*\)</span>, do we head towards <span class="math inline">\(x^*\)</span> (stable) or away (unstable)?</p>
+<p>But compared to the continuous systems we’ve looked at previously, some more interesting behavior can arise. We can get <strong>periodic</strong> points, basically getting caught in a loop. For example, the map <span class="math inline">\(x_{n+1} = -x_n^3\)</span> has a pair of points of period 2: -1 and 1 keep flip-flopping.</p>
+</section>
 <section id="exercises" class="level1">
 <h1>Exercises</h1>
 <hr>
-<section id="exercise-1-exploring-bifurcations" class="level3">
-<h3 class="anchored" data-anchor-id="exercise-1-exploring-bifurcations">Exercise 1: Exploring Bifurcations</h3>
+<section id="exercise-1-exploring-1d-maps" class="level3">
+<h3 class="anchored" data-anchor-id="exercise-1-exploring-1d-maps">Exercise 1: Exploring 1D maps</h3>
 <section id="part-a" class="level4">
 <h4 class="anchored" data-anchor-id="part-a">Part (a)</h4>
-<p>Abby started looking at <span class="math inline">\(\dot{x} = rx - x^2\)</span>. (You can see the beginning of her work in the drive linked on the Week 2 page.)</p>
-<p>Finish this up: what equilibrium points are there for which values of <span class="math inline">\(x\)</span>? What is their stability?</p>
-<p>Then draw the bifurcation diagram (<span class="math inline">\(r\)</span> on the horizontal axis, equilibrium values <span class="math inline">\(x^*\)</span> on the vertical axis).</p>
-</section>
-<section id="types-of-bifurcations" class="level4">
-<h4 class="anchored" data-anchor-id="types-of-bifurcations">Types of Bifurcations</h4>
-<p>For these 1D systems, a bifurcation is a change in a parameter (like <span class="math inline">\(r\)</span> above) that changes the behavior of the system, like number of equilibria or their stability.</p>
-<p>A <strong>saddle-node</strong> bifurcation (also called a fold or blue sky bifurcation) is a bifurcation in which two equilibrium points collide and annihilate each other. From class, <span class="math inline">\(\dot{x} = r + x^2\)</span> was one of these.</p>
-<p>A <strong>transcritical</strong> bifurcation is a bifurcation in which the equilibrium points always exist but they exchange stability at some value of the parameter. Part (a) was one of these.</p>
-<p>A <strong>pitchfork</strong> bifurcation is a transition from one equilibrium point to three equilibrium points. From class, <span class="math inline">\(\dot{x} = rx - x^3\)</span> and <span class="math inline">\(\dot{x} = rx + x^3\)</span> were this kind.</p>
+<p>Choose three of the discrete 1D maps below. Find their equilibrium points and classify their stability.</p>
+<ul>
+<li><span class="math inline">\(x_{n+1} = \sqrt{x_n}\)</span></li>
+<li><span class="math inline">\(x_{n+1} = x_n^3\)</span></li>
+<li><span class="math inline">\(x_{n+1} = x_n^2\)</span></li>
+<li><span class="math inline">\(x_{n+1} = \sin x\)</span></li>
+<li><span class="math inline">\(x_{n+1} = 3x_n - x_n^3\)</span></li>
+<li><span class="math inline">\(x_{n+1} = \ln x\)</span></li>
+<li><span class="math inline">\(x_{n+1} = \frac{2x_n}{1+x_n}\)</span></li>
+<li><span class="math inline">\(x_{n+1} = 3x_n - x_n^3\)</span></li>
+</ul>
 </section>
 <section id="part-b" class="level4">
 <h4 class="anchored" data-anchor-id="part-b">Part (b)</h4>
-<p>For each of these systems, find their equilibrium points across all values of the parameter and classify their stability. Then sketch the bifurcation diagram and classify the type of bifurcation.</p>
+<p>For notation, much like in the continuous case, let <span class="math inline">\(f(x_n)\)</span> be the right side of the equation. In other words, <span class="math inline">\(x_{n+1} = f(x_n)\)</span>.</p>
+<p>For each equilibrium point <span class="math inline">\(x^*\)</span> that you found in Exercise 1, find the derivative <span class="math inline">\(f'(x^*)\)</span>. What do you notice about this value and stability of <span class="math inline">\(x^*\)</span>? Try to explain what’s going on here.</p>
+</section>
+</section>
+<section id="exercise-2-trajectories-and-cobweb-diagrams" class="level3">
+<h3 class="anchored" data-anchor-id="exercise-2-trajectories-and-cobweb-diagrams">Exercise 2: Trajectories and Cobweb Diagrams</h3>
+<section id="part-a-1" class="level4">
+<h4 class="anchored" data-anchor-id="part-a-1">Part (a)</h4>
+<p>You’ll keep working with the three maps you chose in Exercise 1 here. For each one, choose a few initial values <span class="math inline">\(x_0\)</span> (that are not a fixed point you found above) and calculate the next <span class="math inline">\(x_n\)</span> values from each of those initial points, until you feel like someone could see what’s going on. What kinds of things do you notice about your map?</p>
+</section>
+<section id="part-b-1" class="level4">
+<h4 class="anchored" data-anchor-id="part-b-1">Part (b)</h4>
+<p>Now for each of your maps, do the following:</p>
 <ul>
-<li><span class="math inline">\(\dot{x} = x + \frac{rx}{1+x^2}\)</span></li>
-<li><span class="math inline">\(\dot{x} = 1 + rx + x^2\)</span></li>
-<li><span class="math inline">\(\dot{x} = r + x - x^3\)</span></li>
+<li>Draw a coordinate system with <span class="math inline">\(x_n\)</span> on the horizontal axis and <span class="math inline">\(x_{n+1}\)</span> on the vertical axis.</li>
+<li>Draw the diagonal line <span class="math inline">\(x_{n+1} = x_n\)</span>.</li>
+<li>Draw the curve corresponding to that map. (For example, <span class="math inline">\(x_{n+1} = 2x_n\)</span> would be a straight line through the origin with slope 2.) I’ll call this the graph of <span class="math inline">\(f\)</span> (where <span class="math inline">\(x_{n+1} = f(x_n)\)</span>.)</li>
+<li>For each of your initial values <span class="math inline">\(x_0\)</span>, go to that point on the horizontal axis. Draw a line straight up/down until you hit the graph of <span class="math inline">\(f\)</span>. Then move horizontally until you hit the <span class="math inline">\(x_{n+1} = x_n\)</span> line. Then move vertically to the graph of <span class="math inline">\(f\)</span> again, then horizontally to the diagonal line again, etc.</li>
 </ul>
+<p>This graph is called a cobweb diagram. How does it show what’s happening in your maps?</p>
 </section>
 </section>
-<section id="exercise-2" class="level3">
-<h3 class="anchored" data-anchor-id="exercise-2">Exercise 2:</h3>
-<p>The last system from Exercise 1, <span class="math inline">\(\dot{x} = r + x - x^3\)</span>, exhibits interesting behavior called <strong>hysteresis</strong>. It will help throughout this to look at your bifurcation diagram from Exercise 1.</p>
-<ul>
-<li>Start with <span class="math inline">\(r = -1\)</span>. What (approximately) is the equilibrium point? What is its stability?</li>
-<li>Take that equilibrium point as your initial <span class="math inline">\(x\)</span> value. Imagine slowly decreasing <span class="math inline">\(r\)</span> to 0. When <span class="math inline">\(r = 0\)</span>, what equilibrium value do you end up at and why?</li>
-<li>Now slowly increase <span class="math inline">\(r\)</span> to 0.5. What equilibrium value do you end up at here, and why?</li>
-<li>Finally, slowly decrease <span class="math inline">\(r\)</span> back to 0. What equilibrium value are you at now?</li>
-</ul>
-<p>The system involving an albedo of either about 0.3 or 0.7 that we looked at in class in Week 2 behaves in a similar way. How does this relate to recovery after a tipping point (like Earth freezing over in the albedo case)?</p>
-</section>
-<section id="exercise-3-reading-questions" class="level3">
-<h3 class="anchored" data-anchor-id="exercise-3-reading-questions">Exercise 3: Reading Questions</h3>
-<p>Answer these questions based on one of the two following readings:</p>
-<p>📖 <a href="https://www.quantamagazine.org/how-climate-scientists-saw-the-future-before-it-arrived-20250915/"><strong>Reading Option 1:</strong> How Climate Scientists Saw the Future</a></p>
-<p>🎧<a href="https://www.imsi.institute/podcast/matt-huber-on-modeling-paleoclimates/"><strong>Listening/Reading Option 2:</strong> Modeling Paleoclimates</a></p>
-<ul>
-<li><p>What two ideas stood out to you most from your reading?</p></li>
-<li><p>What kinds of mathematical or statistical considerations are there in modeling the past, present, or future Earth system?</p></li>
-</ul>
-</section>
-<section id="challenge-exercise" class="level3">
-<h3 class="anchored" data-anchor-id="challenge-exercise">Challenge Exercise</h3>
-<p>Another system to look at: what’s happening with <span class="math inline">\(\dot{x} = rx - \sin(x)\)</span>?</p>
+<section id="exercise-3-periodic-points" class="level3">
+<h3 class="anchored" data-anchor-id="exercise-3-periodic-points">Exercise 3: Periodic Points</h3>
+<p>Look for points of period 2 in your chosen maps. These should be points such that <span class="math inline">\(x_{n+2} = x_n\)</span> that are not your fixed points. If you don’t think there are any, explain why.</p>
 
 
 </section>

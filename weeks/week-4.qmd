@@ -1,0 +1,29 @@
+---
+title: 'Week Four: Bifurcations and Discrete 1D Maps'
+format: 
+  html: 
+    number-sections: true
+    number-depth: 2
+    section-divs: true
+editor: source
+execute: 
+  echo: true
+  warning: false
+  message: false
+---
+
+Welcome! This week we continued to look at bifurcations and hysteresis and began discussing 1D maps.
+
+# In Class
+
+Photos of work on HW 3 problems and the introduction of discrete 1D maps are in [this Google Drive](https://drive.google.com/drive/folders/1CQUagunDGzrcwCpXmh_IjVtUdaBWf9LW?usp=sharing).
+
+# Homework 4 -- Due Friday, Feb. 20 by the start of class
+
+[**Homework Problems**](hws/hw-4.qmd)
+
+::: callout-caution
+# Submission
+
+Submit your work to the HW 4 assignment on Blackboard!
+:::
