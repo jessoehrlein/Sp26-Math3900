@@ -17,11 +17,13 @@ Due:
 # Introduction
 
 In class, we briefly looked at discrete one-dimensional maps written in terms of the difference in $x$, like $\Delta x = x$, where $\Delta x$ told us what to add to $x_n$ to get to $x_{n+1}$. For example, with this map, when we started with $x_0 = 1$, we found
+
 $\begin{align*}
 x_1 &= x_0 + \Delta x = 1 + 1 = 2, \\
 x_2 &= x_1 + \Delta x = 2 + 2 = 4, \\
 x_3 &= x_2 + \Delta x = 4 + 4 = 8,
-$\begin{align*}
+\end{align*}$
+
 and so forth.
 
 The more typical way to write these discrete 1D maps is in terms of $x_{n+1}$. So the map above, for instance, would be $x_{n+1} = 2x_n$.
