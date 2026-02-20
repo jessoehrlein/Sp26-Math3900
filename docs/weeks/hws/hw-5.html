@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Math 3900 - HW 4: 1D Discrete Maps</title>
+<title>Math 3900 - HW 5: More 1D Discrete Maps</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -183,9 +183,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
   <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">Exercises</a>
   <ul class="collapse">
-  <li><a href="#exercise-1-exploring-1d-maps" id="toc-exercise-1-exploring-1d-maps" class="nav-link" data-scroll-target="#exercise-1-exploring-1d-maps">Exercise 1: Exploring 1D maps</a></li>
-  <li><a href="#exercise-2-trajectories-and-cobweb-diagrams" id="toc-exercise-2-trajectories-and-cobweb-diagrams" class="nav-link" data-scroll-target="#exercise-2-trajectories-and-cobweb-diagrams">Exercise 2: Trajectories and Cobweb Diagrams</a></li>
-  <li><a href="#exercise-3-periodic-points" id="toc-exercise-3-periodic-points" class="nav-link" data-scroll-target="#exercise-3-periodic-points">Exercise 3: Periodic Points</a></li>
+  <li><a href="#exercise-1-decimal-shift-map" id="toc-exercise-1-decimal-shift-map" class="nav-link" data-scroll-target="#exercise-1-decimal-shift-map">Exercise 1: Decimal Shift Map</a></li>
+  <li><a href="#exercise-2-tent-diagram" id="toc-exercise-2-tent-diagram" class="nav-link" data-scroll-target="#exercise-2-tent-diagram">Exercise 2: Tent Diagram</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/jessoehrlein/Sp26-Math3900/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
@@ -195,7 +194,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">HW 4: 1D Discrete Maps</h1>
+<h1 class="title">HW 5: More 1D Discrete Maps</h1>
 </div>
 
 
@@ -222,67 +221,70 @@ Important
 <div class="callout-body-container callout-body">
 <p>Due:</p>
 <ul>
-<li>Friday, February 20, 9:30 AM</li>
+<li>Friday, February 27, 9:30 AM</li>
 </ul>
 </div>
 </div>
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
-<p>In class, we briefly looked at discrete one-dimensional maps written in terms of the difference in <span class="math inline">\(x\)</span>, like <span class="math inline">\(\Delta x = x\)</span>, where <span class="math inline">\(\Delta x\)</span> told us what to add to <span class="math inline">\(x_n\)</span> to get to <span class="math inline">\(x_{n+1}\)</span>. For example, with this map, when we started with <span class="math inline">\(x_0 = 1\)</span>, we found</p>
-<p><span class="math inline">\(\begin{align*} x_1 &amp;= x_0 + \Delta x = 1 + 1 = 2, \\ x_2 &amp;= x_1 + \Delta x = 2 + 2 = 4, \\ x_3 &amp;= x_2 + \Delta x = 4 + 4 = 8, \end{align*}\)</span></p>
-<p>and so forth.</p>
-<p>The more typical way to write these discrete 1D maps is in terms of <span class="math inline">\(x_{n+1}\)</span>. So the map above, for instance, would be <span class="math inline">\(x_{n+1} = 2x_n\)</span>.</p>
-<p>We can still look for fixed points: values of <span class="math inline">\(x_n\)</span> such that <span class="math inline">\(x_{n+1} = x_n\)</span>. We can also still look at their stability – if we’re just a little bit away from that fixed point value <span class="math inline">\(x^*\)</span>, do we head towards <span class="math inline">\(x^*\)</span> (stable) or away (unstable)?</p>
-<p>But compared to the continuous systems we’ve looked at previously, some more interesting behavior can arise. We can get <strong>periodic</strong> points, basically getting caught in a loop. For example, the map <span class="math inline">\(x_{n+1} = -x_n^3\)</span> has a pair of points of period 2: -1 and 1 keep flip-flopping.</p>
+<p>In class, we started to look at maps with chaotic behavior and what the trajectories in chaotic maps look like. Here, you’ll explore two more.</p>
 </section>
 <section id="exercises" class="level1">
 <h1>Exercises</h1>
 <hr>
-<section id="exercise-1-exploring-1d-maps" class="level3">
-<h3 class="anchored" data-anchor-id="exercise-1-exploring-1d-maps">Exercise 1: Exploring 1D maps</h3>
+<section id="exercise-1-decimal-shift-map" class="level3">
+<h3 class="anchored" data-anchor-id="exercise-1-decimal-shift-map">Exercise 1: Decimal Shift Map</h3>
+<p>The decimal shift map is defined as <span class="math inline">\(x_{n+1} = 10 x_n \mod 1\)</span>.</p>
+<p>In other words: take your <span class="math inline">\(x\)</span>, multiply it by 10, and then lop off the integer part. For example, if <span class="math inline">\(x_0 = 0.145\)</span>, then <span class="math inline">\(x_1 = 0.45\)</span>.</p>
+<p>In doing the following parts, it will be helpful to explore some values and look at patterns of what’s going on.</p>
 <section id="part-a" class="level4">
 <h4 class="anchored" data-anchor-id="part-a">Part (a)</h4>
-<p>Choose three of the discrete 1D maps below. Find their equilibrium points and classify their stability.</p>
-<ul>
-<li><span class="math inline">\(x_{n+1} = \sqrt{x_n}\)</span></li>
-<li><span class="math inline">\(x_{n+1} = x_n^3\)</span></li>
-<li><span class="math inline">\(x_{n+1} = x_n^2\)</span></li>
-<li><span class="math inline">\(x_{n+1} = \sin x\)</span></li>
-<li><span class="math inline">\(x_{n+1} = 0.5(3x_n - x_n^3)\)</span></li>
-<li><span class="math inline">\(x_{n+1} = \ln x\)</span></li>
-<li><span class="math inline">\(x_{n+1} = \frac{2x_n}{1+x_n}\)</span></li>
-<li><span class="math inline">\(x_{n+1} = 3x_n - x_n^3\)</span></li>
-</ul>
+<p>What are the fixed points of this map?</p>
 </section>
 <section id="part-b" class="level4">
 <h4 class="anchored" data-anchor-id="part-b">Part (b)</h4>
-<p>For notation, much like in the continuous case, let <span class="math inline">\(f(x_n)\)</span> be the right side of the equation. In other words, <span class="math inline">\(x_{n+1} = f(x_n)\)</span>.</p>
-<p>For each equilibrium point <span class="math inline">\(x^*\)</span> that you found in Exercise 1, find the derivative <span class="math inline">\(f'(x^*)\)</span>. What do you notice about this value and stability of <span class="math inline">\(x^*\)</span>? Try to explain what’s going on here.</p>
+<p>Find some periodic points of this map that have period <span class="math inline">\(p &gt; 1\)</span>. In other words, look for values of <span class="math inline">\(x\)</span> that get caught in a repeating loop of the same values. Try to find these loops for some different periods <span class="math inline">\(p\)</span>.</p>
+</section>
+<section id="part-c" class="level4">
+<h4 class="anchored" data-anchor-id="part-c">Part (c)</h4>
+<p>For which values of <span class="math inline">\(p\)</span> does the map have periodic points? Explain your thinking.</p>
+</section>
+<section id="part-d" class="level4">
+<h4 class="anchored" data-anchor-id="part-d">Part (d)</h4>
+<p>We call a point <span class="math inline">\(x\)</span> <strong>eventually periodic</strong> if the set <span class="math inline">\(\{f^k(x) | k \in \mathbb{Z}^+\}\)</span> is finite. In other words, if I start at <span class="math inline">\(x\)</span>, then at some point I end up either at a fixed point or in a periodic loop. We call a point <strong>aperiodic</strong> if it is not eventually periodic.</p>
+<p>How many aperiodic points does this map have? Describe these points, and explain your reasoning.</p>
+</section>
+<section id="challenge" class="level4">
+<h4 class="anchored" data-anchor-id="challenge">Challenge</h4>
+<p>What happens if we change the map to <span class="math inline">\(x_{n+1} = k x_n \mod 1\)</span> for some other positive integer <span class="math inline">\(k &gt; 1\)</span>?</p>
 </section>
 </section>
-<section id="exercise-2-trajectories-and-cobweb-diagrams" class="level3">
-<h3 class="anchored" data-anchor-id="exercise-2-trajectories-and-cobweb-diagrams">Exercise 2: Trajectories and Cobweb Diagrams</h3>
+<section id="exercise-2-tent-diagram" class="level3">
+<h3 class="anchored" data-anchor-id="exercise-2-tent-diagram">Exercise 2: Tent Diagram</h3>
+<p>The tent diagram is defined as <span class="math display">\[x_{n+1} = \begin{cases} 2x_n &amp; x_n &lt; \frac{1}{2} \\ 2(1-x_n) &amp; x_n \ge \frac{1}{2}. \end{cases}\]</span></p>
+<p>Looking at some trajectories will be useful here again, and I highly recommend making a cobweb diagram!</p>
 <section id="part-a-1" class="level4">
 <h4 class="anchored" data-anchor-id="part-a-1">Part (a)</h4>
-<p>You’ll keep working with the three maps you chose in Exercise 1 here. For each one, choose a few initial values <span class="math inline">\(x_0\)</span> (that are not a fixed point you found above) and calculate the next <span class="math inline">\(x_n\)</span> values from each of those initial points, until you feel like someone could see what’s going on. What kinds of things do you notice about your map?</p>
+<p>What are the fixed points of this map?</p>
 </section>
 <section id="part-b-1" class="level4">
 <h4 class="anchored" data-anchor-id="part-b-1">Part (b)</h4>
-<p>Now for each of your maps, do the following:</p>
-<ul>
-<li>Draw a coordinate system with <span class="math inline">\(x_n\)</span> on the horizontal axis and <span class="math inline">\(x_{n+1}\)</span> on the vertical axis.</li>
-<li>Draw the diagonal line <span class="math inline">\(x_{n+1} = x_n\)</span>.</li>
-<li>Draw the curve corresponding to that map. (For example, <span class="math inline">\(x_{n+1} = 2x_n\)</span> would be a straight line through the origin with slope 2.) I’ll call this the graph of <span class="math inline">\(f\)</span> (where <span class="math inline">\(x_{n+1} = f(x_n)\)</span>.)</li>
-<li>For each of your initial values <span class="math inline">\(x_0\)</span>, go to that point on the horizontal axis. Draw a line straight up/down until you hit the graph of <span class="math inline">\(f\)</span>. Then move horizontally until you hit the <span class="math inline">\(x_{n+1} = x_n\)</span> line. Then move vertically to the graph of <span class="math inline">\(f\)</span> again, then horizontally to the diagonal line again, etc.</li>
-</ul>
-<p>This graph is called a cobweb diagram. How does it show what’s happening in your maps?</p>
+<p>Find some periodic points of this map that have period <span class="math inline">\(p &gt; 1\)</span>. Again, try to find these loops for some different periods <span class="math inline">\(p\)</span>.</p>
 </section>
+<section id="part-c-1" class="level4">
+<h4 class="anchored" data-anchor-id="part-c-1">Part (c)</h4>
+<p>For which values of <span class="math inline">\(p\)</span> does the map have periodic points? Explain your thinking.</p>
 </section>
-<section id="exercise-3-periodic-points" class="level3">
-<h3 class="anchored" data-anchor-id="exercise-3-periodic-points">Exercise 3: Periodic Points</h3>
-<p>Look for points of period 2 in your chosen maps. These should be points such that <span class="math inline">\(x_{n+2} = x_n\)</span> that are not your fixed points. If you don’t think there are any, explain why.</p>
+<section id="part-d-1" class="level4">
+<h4 class="anchored" data-anchor-id="part-d-1">Part (d)</h4>
+<p>How many aperiodic points does this map have? Describe these points, and explain your reasoning.</p>
+</section>
+<section id="challenge-1" class="level4">
+<h4 class="anchored" data-anchor-id="challenge-1">Challenge</h4>
+<p>What happens if we change the <span class="math inline">\(2x_n\)</span> and <span class="math inline">\(2(1-x_n)\)</span> in the function definition to <span class="math inline">\(\mu x_n\)</span> and <span class="math inline">\(\mu (1-x_n)\)</span> for some other real number <span class="math inline">\(\mu\)</span> in <span class="math inline">\((0,2)\)</span>?</p>
 
 
+</section>
 </section>
 </section>
 

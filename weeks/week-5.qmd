@@ -1,0 +1,33 @@
+---
+title: 'Week Five: Discrete 1D Maps and Chaos'
+format: 
+  html: 
+    number-sections: true
+    number-depth: 2
+    section-divs: true
+editor: source
+execute: 
+  echo: true
+  warning: false
+  message: false
+---
+
+Welcome! This week we looked at some 1D maps.
+
+# In Class
+
+Photos of work on $x_{n+1} = \sqrt{x_n}$ and $x_{n+1} = \frac{1}{2} (3x_n - x_n^3)$ are in [this Google Drive](https://drive.google.com/drive/folders/1U4y4B3eq3TV7gJgC24Ip0TBDSVolccu4?usp=sharing).
+
+We also looked at $x_{n+1} = 3x_n - x_n^3$. From the equation, we found fixed points at 0 and $\pm \sqrt{2}$. From playing around with the cobweb diagram, we found points of period 2 at $\pm 2$. But other trajectories had some strange behavior that we'll call chaos. Abby noticed that it seemed like the trajectories were filling in most of the center rectangle of the cobweb diagram, and that's one of the things we'll look for in chaos (topological mixing or topological transitivity).
+
+To play with cobweb diagrams, we used a [Geogebra applet](https://www.geogebra.org/m/QJ79IWCL).
+
+# Homework 5 -- Due Friday, Feb. 27 by the start of class
+
+[**Homework Problems**](hws/hw-5.qmd)
+
+::: callout-caution
+# Submission
+
+Submit your work to the HW 5 assignment on Blackboard!
+:::

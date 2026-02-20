@@ -1,0 +1,79 @@
+---
+title: "HW 5: More 1D Discrete Maps"
+execute:
+  freeze: auto
+  echo: true
+  eval: false
+  warning: false
+  message: false
+---
+
+::: callout-important
+Due:
+
+-   Friday, February 27, 9:30 AM
+:::
+
+# Introduction
+
+In class, we started to look at maps with chaotic behavior and what the trajectories in chaotic maps look like. Here, you'll explore two more.
+
+# Exercises
+
+------------------------------------------------------------------------
+
+### Exercise 1: Decimal Shift Map
+
+The decimal shift map is defined as $x_{n+1} = 10 x_n \mod 1$.
+
+In other words: take your $x$, multiply it by 10, and then lop off the integer part. For example, if $x_0 = 0.145$, then $x_1 = 0.45$.
+
+In doing the following parts, it will be helpful to explore some values and look at patterns of what's going on.
+
+#### Part (a)
+
+What are the fixed points of this map?
+
+#### Part (b)
+
+Find some periodic points of this map that have period $p > 1$. In other words, look for values of $x$ that get caught in a repeating loop of the same values. Try to find these loops for some different periods $p$.
+
+#### Part (c)
+
+For which values of $p$ does the map have periodic points? Explain your thinking.
+
+#### Part (d)
+
+We call a point $x$ **eventually periodic** if the set $\{f^k(x) | k \in \mathbb{Z}^+\}$ is finite. In other words, if I start at $x$, then at some point I end up either at a fixed point or in a periodic loop. We call a point **aperiodic** if it is not eventually periodic.
+
+How many aperiodic points does this map have? Describe these points, and explain your reasoning.
+
+#### Challenge
+
+What happens if we change the map to $x_{n+1} = k x_n \mod 1$ for some other positive integer $k > 1$?
+
+### Exercise 2: Tent Diagram
+
+The tent diagram is defined as $$x_{n+1} = \begin{cases} 2x_n & x_n < \frac{1}{2} \\ 2(1-x_n) & x_n \ge \frac{1}{2}. \end{cases}$$
+
+Looking at some trajectories will be useful here again, and I highly recommend making a cobweb diagram!
+
+#### Part (a)
+
+What are the fixed points of this map?
+
+#### Part (b)
+
+Find some periodic points of this map that have period $p > 1$. Again, try to find these loops for some different periods $p$.
+
+#### Part (c)
+
+For which values of $p$ does the map have periodic points? Explain your thinking.
+
+#### Part (d)
+
+How many aperiodic points does this map have? Describe these points, and explain your reasoning.
+
+#### Challenge
+
+What happens if we change the $2x_n$ and $2(1-x_n)$ in the function definition to $\mu x_n$ and $\mu (1-x_n)$ for some other real number $\mu$ in $(0,2)$?

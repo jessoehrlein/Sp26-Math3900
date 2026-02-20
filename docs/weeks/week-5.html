@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Math 3900 - HW 4: 1D Discrete Maps</title>
+<title>Math 3900 - Week Five: Discrete 1D Maps and Chaos</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,21 +23,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../weeks/week-4.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -61,7 +62,7 @@ ul.task-list li input[type="checkbox"] {
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-sidebar docked">
@@ -73,9 +74,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
-      Math 3900
-      </li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../weeks/week-1.html">Weekly materials</a></li><li class="breadcrumb-item"><a href="../weeks/week-5.html">Week 5</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -90,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="../../">Math 3900</a> 
+      <a href="../">Math 3900</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -111,19 +110,19 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../about.html" class="sidebar-item-text sidebar-link">
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Course Overview</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../course-syllabus.html" class="sidebar-item-text sidebar-link">
+  <a href="../course-syllabus.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Syllabus</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Schedule</span></a>
   </div>
 </li>
@@ -131,40 +130,40 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
  <span class="menu-text">Weekly materials</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../weeks/week-1.html" class="sidebar-item-text sidebar-link">
+  <a href="../weeks/week-1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 1</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../weeks/week-2.html" class="sidebar-item-text sidebar-link">
+  <a href="../weeks/week-2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 2</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../weeks/week-3.html" class="sidebar-item-text sidebar-link">
+  <a href="../weeks/week-3.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 3</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../weeks/week-4.html" class="sidebar-item-text sidebar-link">
+  <a href="../weeks/week-4.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 4</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../weeks/week-5.html" class="sidebar-item-text sidebar-link">
+  <a href="../weeks/week-5.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Week 5</span></a>
   </div>
 </li>
@@ -180,13 +179,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">Exercises</a>
-  <ul class="collapse">
-  <li><a href="#exercise-1-exploring-1d-maps" id="toc-exercise-1-exploring-1d-maps" class="nav-link" data-scroll-target="#exercise-1-exploring-1d-maps">Exercise 1: Exploring 1D maps</a></li>
-  <li><a href="#exercise-2-trajectories-and-cobweb-diagrams" id="toc-exercise-2-trajectories-and-cobweb-diagrams" class="nav-link" data-scroll-target="#exercise-2-trajectories-and-cobweb-diagrams">Exercise 2: Trajectories and Cobweb Diagrams</a></li>
-  <li><a href="#exercise-3-periodic-points" id="toc-exercise-3-periodic-points" class="nav-link" data-scroll-target="#exercise-3-periodic-points">Exercise 3: Periodic Points</a></li>
-  </ul></li>
+  <li><a href="#in-class" id="toc-in-class" class="nav-link active" data-scroll-target="#in-class"><span class="header-section-number">1</span> In Class</a></li>
+  <li><a href="#homework-5-due-friday-feb.-27-by-the-start-of-class" id="toc-homework-5-due-friday-feb.-27-by-the-start-of-class" class="nav-link" data-scroll-target="#homework-5-due-friday-feb.-27-by-the-start-of-class"><span class="header-section-number">2</span> Homework 5 – Due Friday, Feb.&nbsp;27 by the start of class</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/jessoehrlein/Sp26-Math3900/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -195,7 +189,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">HW 4: 1D Discrete Maps</h1>
+<h1 class="title">Week Five: Discrete 1D Maps and Chaos</h1>
 </div>
 
 
@@ -210,80 +204,31 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<div class="callout callout-style-default callout-important callout-titled">
+<p>Welcome! This week we looked at some 1D maps.</p>
+<section id="in-class" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> In Class</h1>
+<p>Photos of work on <span class="math inline">\(x_{n+1} = \sqrt{x_n}\)</span> and <span class="math inline">\(x_{n+1} = \frac{1}{2} (3x_n - x_n^3)\)</span> are in <a href="https://drive.google.com/drive/folders/1U4y4B3eq3TV7gJgC24Ip0TBDSVolccu4?usp=sharing">this Google Drive</a>.</p>
+<p>We also looked at <span class="math inline">\(x_{n+1} = 3x_n - x_n^3\)</span>. From the equation, we found fixed points at 0 and <span class="math inline">\(\pm \sqrt{2}\)</span>. From playing around with the cobweb diagram, we found points of period 2 at <span class="math inline">\(\pm 2\)</span>. But other trajectories had some strange behavior that we’ll call chaos. Abby noticed that it seemed like the trajectories were filling in most of the center rectangle of the cobweb diagram, and that’s one of the things we’ll look for in chaos (topological mixing or topological transitivity).</p>
+<p>To play with cobweb diagrams, we used a <a href="https://www.geogebra.org/m/QJ79IWCL">Geogebra applet</a>.</p>
+</section>
+<section id="homework-5-due-friday-feb.-27-by-the-start-of-class" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Homework 5 – Due Friday, Feb.&nbsp;27 by the start of class</h1>
+<p><a href="../weeks/hws/hw-5.html"><strong>Homework Problems</strong></a></p>
+<div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Important
+Submission
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Due:</p>
-<ul>
-<li>Friday, February 20, 9:30 AM</li>
-</ul>
+<p>Submit your work to the HW 5 assignment on Blackboard!</p>
 </div>
 </div>
-<section id="introduction" class="level1">
-<h1>Introduction</h1>
-<p>In class, we briefly looked at discrete one-dimensional maps written in terms of the difference in <span class="math inline">\(x\)</span>, like <span class="math inline">\(\Delta x = x\)</span>, where <span class="math inline">\(\Delta x\)</span> told us what to add to <span class="math inline">\(x_n\)</span> to get to <span class="math inline">\(x_{n+1}\)</span>. For example, with this map, when we started with <span class="math inline">\(x_0 = 1\)</span>, we found</p>
-<p><span class="math inline">\(\begin{align*} x_1 &amp;= x_0 + \Delta x = 1 + 1 = 2, \\ x_2 &amp;= x_1 + \Delta x = 2 + 2 = 4, \\ x_3 &amp;= x_2 + \Delta x = 4 + 4 = 8, \end{align*}\)</span></p>
-<p>and so forth.</p>
-<p>The more typical way to write these discrete 1D maps is in terms of <span class="math inline">\(x_{n+1}\)</span>. So the map above, for instance, would be <span class="math inline">\(x_{n+1} = 2x_n\)</span>.</p>
-<p>We can still look for fixed points: values of <span class="math inline">\(x_n\)</span> such that <span class="math inline">\(x_{n+1} = x_n\)</span>. We can also still look at their stability – if we’re just a little bit away from that fixed point value <span class="math inline">\(x^*\)</span>, do we head towards <span class="math inline">\(x^*\)</span> (stable) or away (unstable)?</p>
-<p>But compared to the continuous systems we’ve looked at previously, some more interesting behavior can arise. We can get <strong>periodic</strong> points, basically getting caught in a loop. For example, the map <span class="math inline">\(x_{n+1} = -x_n^3\)</span> has a pair of points of period 2: -1 and 1 keep flip-flopping.</p>
-</section>
-<section id="exercises" class="level1">
-<h1>Exercises</h1>
-<hr>
-<section id="exercise-1-exploring-1d-maps" class="level3">
-<h3 class="anchored" data-anchor-id="exercise-1-exploring-1d-maps">Exercise 1: Exploring 1D maps</h3>
-<section id="part-a" class="level4">
-<h4 class="anchored" data-anchor-id="part-a">Part (a)</h4>
-<p>Choose three of the discrete 1D maps below. Find their equilibrium points and classify their stability.</p>
-<ul>
-<li><span class="math inline">\(x_{n+1} = \sqrt{x_n}\)</span></li>
-<li><span class="math inline">\(x_{n+1} = x_n^3\)</span></li>
-<li><span class="math inline">\(x_{n+1} = x_n^2\)</span></li>
-<li><span class="math inline">\(x_{n+1} = \sin x\)</span></li>
-<li><span class="math inline">\(x_{n+1} = 0.5(3x_n - x_n^3)\)</span></li>
-<li><span class="math inline">\(x_{n+1} = \ln x\)</span></li>
-<li><span class="math inline">\(x_{n+1} = \frac{2x_n}{1+x_n}\)</span></li>
-<li><span class="math inline">\(x_{n+1} = 3x_n - x_n^3\)</span></li>
-</ul>
-</section>
-<section id="part-b" class="level4">
-<h4 class="anchored" data-anchor-id="part-b">Part (b)</h4>
-<p>For notation, much like in the continuous case, let <span class="math inline">\(f(x_n)\)</span> be the right side of the equation. In other words, <span class="math inline">\(x_{n+1} = f(x_n)\)</span>.</p>
-<p>For each equilibrium point <span class="math inline">\(x^*\)</span> that you found in Exercise 1, find the derivative <span class="math inline">\(f'(x^*)\)</span>. What do you notice about this value and stability of <span class="math inline">\(x^*\)</span>? Try to explain what’s going on here.</p>
-</section>
-</section>
-<section id="exercise-2-trajectories-and-cobweb-diagrams" class="level3">
-<h3 class="anchored" data-anchor-id="exercise-2-trajectories-and-cobweb-diagrams">Exercise 2: Trajectories and Cobweb Diagrams</h3>
-<section id="part-a-1" class="level4">
-<h4 class="anchored" data-anchor-id="part-a-1">Part (a)</h4>
-<p>You’ll keep working with the three maps you chose in Exercise 1 here. For each one, choose a few initial values <span class="math inline">\(x_0\)</span> (that are not a fixed point you found above) and calculate the next <span class="math inline">\(x_n\)</span> values from each of those initial points, until you feel like someone could see what’s going on. What kinds of things do you notice about your map?</p>
-</section>
-<section id="part-b-1" class="level4">
-<h4 class="anchored" data-anchor-id="part-b-1">Part (b)</h4>
-<p>Now for each of your maps, do the following:</p>
-<ul>
-<li>Draw a coordinate system with <span class="math inline">\(x_n\)</span> on the horizontal axis and <span class="math inline">\(x_{n+1}\)</span> on the vertical axis.</li>
-<li>Draw the diagonal line <span class="math inline">\(x_{n+1} = x_n\)</span>.</li>
-<li>Draw the curve corresponding to that map. (For example, <span class="math inline">\(x_{n+1} = 2x_n\)</span> would be a straight line through the origin with slope 2.) I’ll call this the graph of <span class="math inline">\(f\)</span> (where <span class="math inline">\(x_{n+1} = f(x_n)\)</span>.)</li>
-<li>For each of your initial values <span class="math inline">\(x_0\)</span>, go to that point on the horizontal axis. Draw a line straight up/down until you hit the graph of <span class="math inline">\(f\)</span>. Then move horizontally until you hit the <span class="math inline">\(x_{n+1} = x_n\)</span> line. Then move vertically to the graph of <span class="math inline">\(f\)</span> again, then horizontally to the diagonal line again, etc.</li>
-</ul>
-<p>This graph is called a cobweb diagram. How does it show what’s happening in your maps?</p>
-</section>
-</section>
-<section id="exercise-3-periodic-points" class="level3">
-<h3 class="anchored" data-anchor-id="exercise-3-periodic-points">Exercise 3: Periodic Points</h3>
-<p>Look for points of period 2 in your chosen maps. These should be points such that <span class="math inline">\(x_{n+2} = x_n\)</span> that are not your fixed points. If you don’t think there are any, explain why.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -520,6 +465,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../weeks/week-4.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Week 4</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
