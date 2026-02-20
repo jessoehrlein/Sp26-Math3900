@@ -46,7 +46,7 @@ Choose three of the discrete 1D maps below. Find their equilibrium points and cl
 -   $x_{n+1} = x_n^3$
 -   $x_{n+1} = x_n^2$
 -   $x_{n+1} = \sin x$
--   $x_{n+1} = 3x_n - x_n^3$
+-   $x_{n+1} = 0.5(3x_n - x_n^3)$
 -   $x_{n+1} = \ln x$
 -   $x_{n+1} = \frac{2x_n}{1+x_n}$
 -   $x_{n+1} = 3x_n - x_n^3$
