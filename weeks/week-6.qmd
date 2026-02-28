@@ -1,0 +1,37 @@
+---
+title: 'Week Five: More Discrete 1D Maps and Chaos'
+format: 
+  html: 
+    number-sections: true
+    number-depth: 2
+    section-divs: true
+editor: source
+execute: 
+  echo: true
+  warning: false
+  message: false
+---
+
+This week we continued to look at discrete 1D maps and started to read a key paper in chaos theory.
+
+# In Class
+
+Photos of work on the decimal shift map and tent map (from HW5) are in [this Google Drive](https://drive.google.com/drive/folders/1ZCNoNdWfiW1fP9K8mUXxDSGVvgYek_k4?usp=sharing). You can also look at [Desmos graphs for these explorations](https://www.desmos.com/calculator/lvzfd6ts9q) (thanks Aidan!).
+
+We started discussing [Li and Yorke's paper "Period Three Implies Chaos"](https://www.its.caltech.edu/~matilde/LiYorke.pdf). The goal of looking at this paper will be to understand the statement of the main result (Theorem 1), the ideas of the proof of the first part of Theorem 1 (proof of T1), and the proof in Appendix 1 that a point of period 5 does not guarantee a point of period 3.
+
+In class, we talked through the introduction and what to expect to see in the main result. That list included:
+
+-   having a point of period 3 guarantees that for all natural numbers $p$, a periodic point exists with that period
+-   having a point of period 3 guarantees that there are uncountably many aperiodic points
+-   those aperiodic points have orbits/trajectories that behave in ways that feel "chaotic"
+
+# Homework 6 -- Due Friday, Mar. 6 by the start of class
+
+[**Homework Reading Guide**](hws/hw-6.qmd)
+
+::: callout-caution
+# Submission
+
+Submit your work to the HW 6 assignment on Blackboard!
+:::

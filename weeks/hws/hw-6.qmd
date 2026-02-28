@@ -1,0 +1,103 @@
+---
+title: "HW 6: Period 3 Implies Chaos"
+execute:
+  freeze: auto
+  echo: true
+  eval: false
+  warning: false
+  message: false
+---
+
+::: callout-important
+Due:
+
+-   Friday, March 6, 9:30 AM
+:::
+
+# Introduction
+
+In class, we started to read [Li and Yorke's paper "Period Three Implies Chaos"](https://www.its.caltech.edu/~matilde/LiYorke.pdf).
+
+# Reading Guide
+
+------------------------------------------------------------------------
+
+### Definitions and Theorem Statement
+
+#### Part (a)
+
+The first part of section 2 establishes some definitions and notation. A lot of these are definitions we've worked with for the last week or two. If you have questions, put them here.
+
+What is meant by the line "Since F need not be one-to-one, there may be points which are eventually periodic but are not periodic?"
+
+#### Part (b)
+
+Now read the assumptions of the theorem.
+
+-   What comes to mind when you read that $J$ is an interval? Why might this matter?
+
+-   What comes to mind when you read that $F$ is continuous? Why might this matter?
+
+-   Sketch an interval with $a, b, c, d$ that satisfy one of the stated inequality conditions
+
+-   A Remark right below the theorem points out a point of period 3 satisfies the requirements on $a$. Explain why this is the case.
+
+#### Part (c)
+
+Now read the two conclusions of the theorem.
+
+-   What parts of these align with the expectations we talked about/things talked about in the definitions paragraph about what would be in this theorem?
+
+-   What notation, if any, is unfamiliar here? What parts of these conclusions do you have questions about?
+
+#### Part (d)
+
+The Li and Yorke definition of chaos is about "scrambling." The trajectories of two aperiodic points get arbitrarily close to each other for infinitely many values of $n$, but they also don't stay close together. The trajectory of an aperiodic point also does not stay close to the trajectory of a periodic point.
+
+The notation $\lim \inf$ is short for "limit infimum," where infimum is related to the idea of a lower bound, and $\lim \sup$ is short for "limit supremum," where supremum is related to the idea of an upper bound. Which aspects of that "scrambledness" of aperiodic trajectories do you think match up to each of the three statements in T2?
+
+#### Part (e)
+
+There are some comments after the theorem statement and before the proof. Why is the definition of asymptotically periodic useful here?
+
+### Theorem Proof
+
+#### Part (a)
+
+Outline the structure of the proof. Does it dive right into the theorem, are there other results first, what's happening here?
+
+#### Part (b)
+
+In the lemmas here, you should read "compact" to mean that the interval is closed (includes the endpoints) and bounded (not extending to positive or negative infinity).
+
+-   The statement of Lemma 0 is a little terse. Explain with more words what this means, and/or write some questions/confusions about what isn't clear here.
+
+-   Read through the Lemma 0 proof. Try to explain what's happening here, including where the assumption that $G$ is continuous is used. Write questions/confusions about anything that isn't clear here.
+
+#### Part (c)
+
+Now look at Lemma 1.
+
+-   Try to explain what Lemma 1 means in more words, expanding notation, etc. Write any questions/confusions about what isn't clear here.
+
+-   Read through the Lemma 1 proof. What type of proof is it? How is Lemma 0 used? What makes sense here, and what could use more clarification/detail?
+
+#### Part (d)
+
+Now look at Lemma 2.
+
+-   Explain what Lemma 2 means, translating some of the notation to words/mathematical terms. (For example, what does $G(p) = p$ mean in words we've been using in this course?)
+
+-   Read through the (two-line) Lemma 2 proof. How are the assumptions of the lemma used here? What makes sense to you, and what could use more clarification/detail?
+
+#### Part (e)
+
+Finally, look at the proof of T1, noting the assumption and notation introduced between the Lemma 2 proof and the T1 proof.
+
+Explain what you understand of what's going on in this proof, and write any questions/confusions about this part.
+
+### Appendix 1: Period 5 does not imply period 3
+
+This proof is quite different because it's finding a counterexample!
+
+Work through this proof. It might be helpful to draw $F$, to explain to yourself why $F$ was defined this way, to write down any questions/confusions, etc.
