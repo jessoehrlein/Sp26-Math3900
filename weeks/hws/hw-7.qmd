@@ -1,0 +1,30 @@
+---
+title: "HW 7: Horseshoe Map"
+execute:
+  freeze: auto
+  echo: true
+  eval: false
+  warning: false
+  message: false
+---
+
+::: callout-important
+Due:
+
+-   Friday, March 27, 9:30 AM
+:::
+
+# Reading Questions
+
+------------------------------------------------------------------------
+
+Answer these questions based on one of the two following readings:
+
+📖 [**Reading Option 1:** How We Can Make Sense of Chaos](https://www.quantamagazine.org/how-mathematicians-make-sense-of-chaos-20220302/)
+
+📺[**Watching Option 2:** Smale's Horseshoe Map](https://www.youtube.com/watch?v=Xx67aAeAm2M)
+
+-   Describe the map (the action being done in each step) in the horseshoe example. What happens as this is repeated many times?
+
+-   In Li and Yorke's paper, this is mentioned as an example of using sequences of sets to find infinitely many periodic points. From what you read or saw, what feels similar to what we've been talking about in class? What feels different?
+

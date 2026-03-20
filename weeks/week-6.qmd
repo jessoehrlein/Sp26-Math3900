@@ -1,5 +1,5 @@
 ---
-title: 'Week Five: More Discrete 1D Maps and Chaos'
+title: 'Week Six: More Discrete 1D Maps and Chaos'
 format: 
   html: 
     number-sections: true

@@ -192,20 +192,16 @@ If you use generative AI (such as ChatGPT, Gemini, Claude, etc.), please tell me
 
 # Course Organization {#sec-schedule}
 
-This class is organized into four main sections.
+This class is organized into three main sections.
 
-## Unit 1: Dynamical Systems (Weeks 1-7)
+## Unit 1: Dynamical Systems (Weeks 1-9)
 
 The first half of the course is about how we describe the climate system using differential equations and then some of the tools we can use to analyze those equations.
 
-## Unit 2: Climate Indices Over Time (Weeks 8-10)
+## Unit 2: Quantifying Climate and Extremes (Weeks 9-12)
 
-This unit focuses on how we describe what is happening over time in different parts of the climate. We'll look at empirical orthogonal functions, a dimension reduction tool that lets us more succinctly describe parts of the climate system, and then we'll use different methods from time series analysis to consider the climate indices we calculate over time.
+This unit focuses on how we describe what is happening over time in different parts of the climate. We'll look at empirical orthogonal functions, a dimension reduction tool that lets us more succinctly describe parts of the climate system. We will look at different ways to decide how extreme an event was and how that might be changing. We'll use statistical tools from extreme value theory as well as a couple of different approaches under the umbrella of attribution theory.
 
-## Unit 3: Evaluating Extremes (Weeks 10-12)
-
-In this unit, we will look at different ways to decide how extreme an event was and how that might be changing. We'll use statistical tools from extreme value theory as well as a couple of different approaches under the umbrella of attribution theory.
-
-## Unit 4: Final Projects (Week 13-Final)
+## Unit 3: Final Projects (Week 13-Final)
 
 In the final part of the course, you will lead! Each student will do a final project either exploring a new math & climate topic or extending/applying something we've covered in a new way. You will each have 25-30 minutes in class or our finals period to lead the class in exploring that topic.
