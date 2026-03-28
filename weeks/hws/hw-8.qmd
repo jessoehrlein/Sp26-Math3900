@@ -1,0 +1,63 @@
+---
+title: "HW 8: Climate Indices"
+execute:
+  freeze: auto
+  echo: true
+  eval: false
+  warning: false
+  message: false
+---
+
+::: callout-important
+Due:
+
+-   Friday, April 3, 9:30 AM
+:::
+
+# Principal Component Analysis
+
+------------------------------------------------------------------------
+
+The following questions walk you through a process called **principal component analysis** (PCA): singular value decomposition from linear algebra with a little bit of statistics sneaking in.
+
+In atmospheric science, PCA is also often called **empirical orthogonal functions**. The goal is to find patterns or modes that describe the variability of what happens in a particular part of the atmosphere. This is basically a form of dimension reduction: instead of having to think about the details of what's happening in a region, we can say "oh, it looks like this pattern we know."
+
+You can use tools of your choice for the following questions.
+
+### Step 1
+
+We'll define a matrix to use as follows: $$\mathbf{A} = \begin{pmatrix} 1000 & 990 & 970 & 980 \\ 970 & 972 & 960 & 980 \\ 980 & 990 & 962 & 982 \\ 982 & 989 & 968 & 976 \\ 985 & 976 & 972 & 974 \end{pmatrix}.$$
+
+Here, each row is a point in time, so we have five time points here. Each column corresponds to a particular location or gridpoint/square.
+
+To start, find a standardized form of $\mathbf{A}$ that we'll call $\mathbf{X}$. Standardization involves two steps here: subtract the mean of each column from all values in that column, and divide by the standard deviation of the values in that column.
+
+### Step 2
+
+We're trying to find a pattern overall across our locations, so we're going to calculate the correlation matrix:
+
+$$\mathbf{C} = \frac{1}{M-1} \mathbf{X^T} \mathbf{X},$$
+
+where $M$ is the number of time points.
+
+Find $\mathbf{C}$. Why does this matrix multiplication correspond to finding correlations?
+
+### Step 3
+
+We want to find orthogonal vectors $\mathbf{e_i}$ that explain the most variance of $\mathbf{X}$, and we'd like to find them in order: $\mathbf{e_1}$ should have the largest magnitude projection onto $\mathbf{X}$. This corresponds to finding the eigenvectors of $\mathbf{C}$.
+
+Find the eigenvalues and corresponding eigenvectors of $\mathbf{C}$.
+
+(To see the details of this logic, [here's a good explanation](https://kls2177.github.io/Climate-and-Geophysical-Data-Analysis/chapters/Week7/eofs.html).)
+
+### Step 4
+
+Find your largest eigenvalue. Divide that eigenvalue by the sum of all your eigenvalues. That is the percent of the variance of $\mathbf{X}$ that your first principal component (or first empirical orthogonal function, EOF) explains. How important does it seem like this first mode is in this data?
+
+### Step 5
+
+To turn this into an index, we want a time series for the strength of the pattern of this first EOF. Let $\mathbf{e_1}$ be the eigenvector for this first mode. To find the time series for this pattern, calculate $\mathbf{Xe_1}$ (a projection). At which time point was the pattern strongest?
+
+### Reflection Question
+
+Sometimes a pattern in the ocean or atmosphere is defined in two different ways. One way is usually based in PCA/EOF analysis like this. The other way is typically based on something like an average over a certain region or the difference between values at two particular stations/gridpoints. What do you think are the advantages and disadvantages of each method?

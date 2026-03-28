@@ -47,6 +47,12 @@ website:
             text: "Week 6"
           - href: weeks/week-8.qmd
             text: "Week 8"
+          - href: weeks/week-9.qmd
+            text: "Week 9"
+      - section: "Project"
+        contents:
+          - href: project.qmd
+            text: "Project Description"
 
 format:
   html:
