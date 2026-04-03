@@ -22,44 +22,48 @@ You will submit any materials that you use in your presentation as well as a lis
 
 You are welcome to come up with your own project topic, but below is a long list of suggestions. Links are to a potential starting point, and I'm happy to help you find more resources.
 
--   Box model of the thermohaline (ocean) circulation
+-   [Box model of the thermohaline (ocean) circulation](https://www.pik-potsdam.de/members/willeit/klimageschichte-ubungen/stommel-model/tutorial.pdf)
 
 -   [Reanalysis and data assimilation](https://www.youtube.com/watch?v=Ux46HVU7H_g) (how we combine observations and models into something we can work with well)
 
--   Atmospheric stability, lapse rate, and skew T-log p plots
+-   [Atmospheric stability, lapse rate](https://geo.libretexts.org/Bookshelves/Meteorology_and_Climate_Science/Atmospheric_Processes_and_Phenomena/05%3A_Atmospheric_Stability/5.02%3A_Atmospheric_Stability_and_Lapse_Rates), and [skew T-log p plots](https://www.noaa.gov/jetstream/upperair/skew-t-log-p-diagrams)
 
--   Models of El Nino Southern Oscillation (recharge-oscillator model, delayed-oscillator model)
+-   Models of El Nino Southern Oscillation such as the [recharge-oscillator model](https://eos.org/editors-vox/two-equations-that-unlock-el-nino) and [delayed-oscillator model](https://groups.seas.harvard.edu/climate/eli/reprints/WH_GFD_PDFvol2001/lect_02_2001.pdf) (note: I can loan a book that may be more helpful on this front)
 
--   Sea ice, fractals, and fractal dimension
+-   [Sea ice, fractals, and fractal dimension](https://ems.press/journals/jfg/articles/15514) (note: I can loan a book that may be more helpful on this front)
 
--   Further in radiative balance: reading Manabe & Strickler paper
+-   [Modeling sea ice](https://www.math.utah.edu/~golden/docs/publications/Golden_et_al_NAMS_2020.pdf)
 
--   Coral and agent-based models
+-   [Fluid transport in sea ice](https://www.math.utah.edu/~golden/docs/publications/GOLDEN_Notices_AMS_May_09.pdf)
+
+-   Further in radiative balance: reading [Manabe & Strickler paper](https://www.gfdl.noaa.gov/bibliography/related_files/sm6401.pdf)
+
+-   [Coral and agent-based models](https://www.quantamagazine.org/the-elegant-math-model-that-could-help-rescue-coral-reefs-20250226/)
 
 -   [Atmospheric chemistry and graph theory](https://facss.mit.edu/pdf/Fall2023/Fall2023_Silva.pdf)
 
 -   [Machine learning/AI approaches to weather forecasting](https://www.sun-sentinel.com/2025/09/05/big-leap-forward-how-ai-is-already-shaping-your-hurricane-forecasts/)
 
--   Solutions to atmosphere/ocean wave equations
+-   [Solutions to atmosphere/ocean wave equations](https://www.quantamagazine.org/the-hidden-math-of-ocean-waves-crashes-into-view-20251015/)
 
--   Wave-mean flow interaction
+-   [Wave-mean flow interaction](https://hogback.atmos.colostate.edu/group/dave/pdf/Wave-mean-flow_interactions.pdf) (how do waves affect what happens in the atmosphere?)
 
 -   [Thermal wind balance](https://climate.ucdavis.edu/ATM121/AtmosphericDynamics-Chapter03-Part03-ThermalWind.pdf) (theory about how we get the jet stream)
 
--   Analyzing paleoclimate data
+-   [Earth's orbit and paleoclimatology](https://science.nasa.gov/earth/earth-observatory/paleoclimatology-explaining-the-evidence/)
 
--   Spectral analysis (looking at frequencies of a time series)
+-   [Spectral analysis](https://web.stanford.edu/class/earthsys214/notes/series.html) (looking at frequencies of a time series)
 
--   Time series analysis (going deeper on what we looked at in Week 10)
+-   [Time series analysis](https://otexts.com/fpp3/) (going deeper on what we looked at in Week 10)
 
--   Dynamical systems and bifurcations in two dimensions
+-   [Dynamical systems in two dimensions](https://understandinglinearalgebra.org/sec-dynamical.html)
 
--   The logistic map (a very rich 1D discrete dynamical system that we didn't look at)
+-   The [logistic map](https://mathworld.wolfram.com/LogisticMap.html) (a very rich 1D discrete dynamical system that we didn't look at)
 
--   Numerical methods in climate or numerical weather prediction models
-
--   Tipping point of the Atlantic Meridional Overturning Circulation
+-   [Numerical methods](https://earth-env-data-science.github.io/lectures/models/intro_models.html) in climate or numerical weather prediction models
 
 -   [Topological data analysis and weather regimes](https://arxiv.org/abs/2104.03196)
 
--   Different kinds of tipping
+-   [Different kinds of tipping](https://report-2023.global-tipping-points.org/introduction/key-concepts/)
+
+-   Read a climate-ish paper that uses statistics or mathematics (this will be most climate-ish papers, but I'm happy to help you find an interesting and appropriate one)
