@@ -1,0 +1,65 @@
+---
+title: "Project"
+execute:
+  freeze: auto
+  echo: true
+  eval: false
+  warning: false
+  message: false
+---
+
+::: callout-important
+Due dates will vary, to be discussed in class.
+:::
+
+# Project Description
+
+------------------------------------------------------------------------
+
+For your project, you will present a math of climate-related topic to the class on one of April 24th, May 1st, or May 12th (12:20 - 2:20, our finals period). You will have 20-25 minutes for that presentation, so the goal is not for you to just talk about a topic (though feel free to do some of that). Look for ways that your classmates can explore or interact with the topic -- trying problems, going through some kind of demo, discussing graphs or questions, etc.
+
+You will submit any materials that you use in your presentation as well as a list of sources you drew on.
+
+You are welcome to come up with your own project topic, but below is a long list of suggestions. Links are to a potential starting point, and I'm happy to help you find more resources.
+
+-   Box model of the thermohaline (ocean) circulation
+
+-   [Reanalysis and data assimilation](https://www.youtube.com/watch?v=Ux46HVU7H_g) (how we combine observations and models into something we can work with well)
+
+-   Atmospheric stability, lapse rate, and skew T-log p plots
+
+-   Models of El Nino Southern Oscillation (recharge-oscillator model, delayed-oscillator model)
+
+-   Sea ice, fractals, and fractal dimension
+
+-   Further in radiative balance: reading Manabe & Strickler paper
+
+-   Coral and agent-based models
+
+-   [Atmospheric chemistry and graph theory](https://facss.mit.edu/pdf/Fall2023/Fall2023_Silva.pdf)
+
+-   [Machine learning/AI approaches to weather forecasting](https://www.sun-sentinel.com/2025/09/05/big-leap-forward-how-ai-is-already-shaping-your-hurricane-forecasts/)
+
+-   Solutions to atmosphere/ocean wave equations
+
+-   Wave-mean flow interaction
+
+-   [Thermal wind balance](https://climate.ucdavis.edu/ATM121/AtmosphericDynamics-Chapter03-Part03-ThermalWind.pdf) (theory about how we get the jet stream)
+
+-   Analyzing paleoclimate data
+
+-   Spectral analysis (looking at frequencies of a time series)
+
+-   Time series analysis (going deeper on what we looked at in Week 10)
+
+-   Dynamical systems and bifurcations in two dimensions
+
+-   The logistic map (a very rich 1D discrete dynamical system that we didn't look at)
+
+-   Numerical methods in climate or numerical weather prediction models
+
+-   Tipping point of the Atlantic Meridional Overturning Circulation
+
+-   [Topological data analysis and weather regimes](https://arxiv.org/abs/2104.03196)
+
+-   Different kinds of tipping
