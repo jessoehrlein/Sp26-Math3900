@@ -113,13 +113,9 @@ This semester's seminar focuses on the mathematical and statistical tools used i
 +--------------------------+----------------+----------------+----------------+----------------+
 |                          | A-level        | B-level        | C-level        | D-level        |
 +==========================+================+================+================+================+
-| **Homeworks**            | 8 Satisfactory | 6 Satisfactory | 5 Satisfactory | 4 Satisfactory |
+| **Homeworks**            | 7 Satisfactory | 6 Satisfactory | 5 Satisfactory | 4 Satisfactory |
 |                          |                |                |                |                |
-| **(9 Total)**            |                |                |                |                |
-+--------------------------+----------------+----------------+----------------+----------------+
-| **Paper Reading Guides** | 2 Complete     | 2 Complete     | 1 Complete     |                |
-|                          |                |                |                |                |
-| **(2 Total)**            |                |                |                |                |
+| **(8 Total)**            |                |                |                |                |
 +--------------------------+----------------+----------------+----------------+----------------+
 | **Final Project**        | Excellent      | Satisfactory   | Progressing    | Novice         |
 +--------------------------+----------------+----------------+----------------+----------------+
