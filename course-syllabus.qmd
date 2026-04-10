@@ -49,15 +49,11 @@ execute:
 
 # Student Hours {#sec-OH}
 
-+-----------------+-------------------------------------------------+
-| Day             | Time                                            |
-+=================+=================================================+
-| Mondays         | 1:30pm -- 3:00pm                                |
-+-----------------+-------------------------------------------------+
-| Thursdays       | 8:15am -- 9:15am                                |
-+-----------------+-------------------------------------------------+
-| Fridays         | 11:45am -- 1:00pm                               |
-+-----------------+-------------------------------------------------+
+| Day       | Time              |
+|-----------|-------------------|
+| Mondays   | 1:30pm -- 3:00pm  |
+| Thursdays | 8:15am -- 9:15am  |
+| Fridays   | 11:45am -- 1:00pm |
 
 I will typically hold student hours in my office (Edgerly 301E). If we're somewhere else, like the Edgerly 308 conference room, I'll leave a note on the whiteboard outside my office door!
 
@@ -110,15 +106,15 @@ This semester's seminar focuses on the mathematical and statistical tools used i
 
 # Grade Breakdown {#sec-grades}
 
-+--------------------------+----------------+----------------+----------------+----------------+
-|                          | A-level        | B-level        | C-level        | D-level        |
-+==========================+================+================+================+================+
-| **Homeworks**            | 7 Satisfactory | 6 Satisfactory | 5 Satisfactory | 4 Satisfactory |
-|                          |                |                |                |                |
-| **(8 Total)**            |                |                |                |                |
-+--------------------------+----------------+----------------+----------------+----------------+
-| **Final Project**        | Excellent      | Satisfactory   | Progressing    | Novice         |
-+--------------------------+----------------+----------------+----------------+----------------+
++-------------------+----------------+----------------+----------------+----------------+
+|                   | A-level        | B-level        | C-level        | D-level        |
++===================+================+================+================+================+
+| **Homeworks**     | 7 Satisfactory | 6 Satisfactory | 5 Satisfactory | 4 Satisfactory |
+|                   |                |                |                |                |
+| **(8 Total)**     |                |                |                |                |
++-------------------+----------------+----------------+----------------+----------------+
+| **Final Project** | Excellent      | Satisfactory   | Progressing    | Novice         |
++-------------------+----------------+----------------+----------------+----------------+
 
 I will set + / - grades based on how close you are to the next higher (or lower) letter grade.
 
