@@ -16,7 +16,7 @@ Due dates will vary, to be discussed in class.
 
 ------------------------------------------------------------------------
 
-For your project, you will present a math of climate-related topic to the class on one of April 24th, May 1st, or May 12th (12:20 - 2:20, our finals period). You will have 20-25 minutes for that presentation, so the goal is not for you to just talk about a topic (though feel free to do some of that). Look for ways that your classmates can explore or interact with the topic -- trying problems, going through some kind of demo, discussing graphs or questions, etc.
+For your project, you will present a math of climate-related topic to the class on one of April 24th, May 1st, or May 11th (10:10 - 12:20, our finals period). You will have 20-25 minutes for that presentation, so the goal is not for you to just talk about a topic (though feel free to do some of that). Look for ways that your classmates can explore or interact with the topic -- trying problems, going through some kind of demo, discussing graphs or questions, etc.
 
 You will submit any materials that you use in your presentation as well as a list of sources you drew on.
 
@@ -67,3 +67,5 @@ You are welcome to come up with your own project topic, but below is a long list
 -   [Different kinds of tipping](https://report-2023.global-tipping-points.org/introduction/key-concepts/)
 
 -   Read a climate-ish paper that uses statistics or mathematics (this will be most climate-ish papers, but I'm happy to help you find an interesting and appropriate one)
+
+-   Analyze some climate-y data or analyze some data using methods from class (time series analysis, extreme value theory, etc.)
