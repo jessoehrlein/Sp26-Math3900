@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Math 3900 - MATH 3900: Mathematics Seminar - Mathematics of Climate</title>
+<title>Math 3900 - Week Eleven: A Taste of Extreme Value Theory</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,23 +23,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./weeks/week-1.html" rel="next">
-<link href="./course-syllabus.html" rel="prev">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../project.html" rel="next">
+<link href="../weeks/week-9.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -60,8 +60,10 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-sidebar docked">
@@ -73,7 +75,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./about.html">Course information</a></li><li class="breadcrumb-item"><a href="./index.html">Schedule</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../weeks/week-1.html">Weekly materials</a></li><li class="breadcrumb-item"><a href="../weeks/week-11.html">Week 11</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -88,7 +90,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Math 3900</a> 
+      <a href="../">Math 3900</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -100,28 +102,28 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
  <span class="menu-text">Course information</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./about.html" class="sidebar-item-text sidebar-link">
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Course Overview</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course-syllabus.html" class="sidebar-item-text sidebar-link">
+  <a href="../course-syllabus.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Syllabus</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Schedule</span></a>
   </div>
 </li>
@@ -129,64 +131,64 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
  <span class="menu-text">Weekly materials</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./weeks/week-1.html" class="sidebar-item-text sidebar-link">
+  <a href="../weeks/week-1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 1</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./weeks/week-2.html" class="sidebar-item-text sidebar-link">
+  <a href="../weeks/week-2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 2</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./weeks/week-3.html" class="sidebar-item-text sidebar-link">
+  <a href="../weeks/week-3.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 3</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./weeks/week-4.html" class="sidebar-item-text sidebar-link">
+  <a href="../weeks/week-4.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 4</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./weeks/week-5.html" class="sidebar-item-text sidebar-link">
+  <a href="../weeks/week-5.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 5</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./weeks/week-6.html" class="sidebar-item-text sidebar-link">
+  <a href="../weeks/week-6.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 6</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./weeks/week-8.html" class="sidebar-item-text sidebar-link">
+  <a href="../weeks/week-8.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 8</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./weeks/week-9.html" class="sidebar-item-text sidebar-link">
+  <a href="../weeks/week-9.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 9</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./weeks/week-11.html" class="sidebar-item-text sidebar-link">
+  <a href="../weeks/week-11.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Week 11</span></a>
   </div>
 </li>
@@ -203,7 +205,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./project.html" class="sidebar-item-text sidebar-link">
+  <a href="../project.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Project Description</span></a>
   </div>
 </li>
@@ -215,14 +217,21 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#in-class" id="toc-in-class" class="nav-link active" data-scroll-target="#in-class"><span class="header-section-number">1</span> In Class</a></li>
+  <li><a href="#some-further-resources" id="toc-some-further-resources" class="nav-link" data-scroll-target="#some-further-resources"><span class="header-section-number">2</span> Some Further Resources</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/jessoehrlein/Sp26-Math3900/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">MATH 3900: Mathematics Seminar - Mathematics of Climate</h1>
+<h1 class="title">Week Eleven: A Taste of Extreme Value Theory</h1>
 </div>
 
 
@@ -237,173 +246,31 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses, with all changes documented here.</p>
-<div class="column-screen-inset-right">
-<table class="table">
-<colgroup>
-<col style="width: 5%">
-<col style="width: 10%">
-<col style="width: 35%">
-<col style="width: 5%">
-<col style="width: 5%">
-<col style="width: 10%">
-<col style="width: 10%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Week</th>
-<th>Date</th>
-<th>Topic</th>
-<th style="text-align: center;">Slides</th>
-<th style="text-align: center;">Activity</th>
-<th style="text-align: center;">Homework &amp; Reading</th>
-<th style="text-align: center;">Project</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;"><a href="./weeks/week-1.html">1</a></td>
-<td>Jan 23</td>
-<td>Intro and Earth Balance Models</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"><a href="https://docs.google.com/document/d/1NwYQoeJXnzjYq2oUcTnepFX89SFwgO9tor0-lTuR5X4/edit?usp=sharing">📋</a></td>
-<td style="text-align: center;"><a href="./weeks/hws/hw-1.html">✍</a></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><a href="./weeks/week-2.html">2</a></td>
-<td>Jan 30</td>
-<td>Equilibria &amp; Stability</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"><a href="./weeks/week-2.html">📋</a></td>
-<td style="text-align: center;"><a href="./weeks/hws/hw-2.html">✍</a></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"><a href="./weeks/week-3.html">3</a></td>
-<td>Feb 6</td>
-<td>Bifurcations</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"><a href="./weeks/week-3.html">📋</a></td>
-<td style="text-align: center;"><a href="./weeks/hws/hw-3.html">✍</a></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><a href="./weeks/week-4.html">4</a></td>
-<td>Feb 13</td>
-<td><p>Bifurcations</p>
-<p>Discrete 1D Maps</p></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"><a href="./weeks/hws/hw-4.html">✍</a></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"><a href="./weeks/week-5.html">5</a></td>
-<td>Feb 20</td>
-<td>1D Chaos</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"><a href="./weeks/week-5.html">📋</a></td>
-<td style="text-align: center;"><a href="./weeks/hws/hw-5.html">✍</a></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><a href="./weeks/week-6.html">6</a></td>
-<td>Feb 27</td>
-<td>“Period 3 Implies Chaos” preparation</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"><a href="./weeks/week-6.html">📋</a></td>
-<td style="text-align: center;"><a href="./weeks/hws/hw-6.html">✍</a></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">7</td>
-<td>Mar 6</td>
-<td>SNOW DAY</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><a href="./weeks/week-8.html">8</a></td>
-<td>Mar 20</td>
-<td>“Period Three Implies Chaos”</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"><a href="./weeks/week-8.html">📋</a></td>
-<td style="text-align: center;"><a href="./weeks/hws/hw-7.html">✍</a></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"><a href="./weeks/week-9.html">9</a></td>
-<td>Mar 27</td>
-<td>Chaos Wrapup</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"><a href="./weeks/week-9.html">📋</a></td>
-<td style="text-align: center;"><a href="./weeks/hws/hw-8.html">✍</a></td>
-<td style="text-align: center;"><a href="./project.html">📣</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">10</td>
-<td>Apr 3</td>
-<td>Climate Indices</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">11</td>
-<td>Apr 10</td>
-<td>Extreme Value Theory</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">12</td>
-<td>Apr 17</td>
-<td>Attribution Theory</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">13</td>
-<td><p>Apr 24</p>
-<p>9:30 - 10:45</p></td>
-<td>Work Time, Final Presentation</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">14</td>
-<td><p>May 1</p>
-<p>9:30 - 10:45</p></td>
-<td>Final Presentations</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">Final</td>
-<td><strong>Mon. May 11, 10:10 - 12:20</strong></td>
-<td>Final Presentations</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-</tbody>
-</table>
-</div>
+<p>This week we looked briefly at extreme value theory, the statistical tools we use when we’re more interested in extremes (maxima or minima) of our samples than in the more typical means or medians.</p>
+<section id="in-class" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> In Class</h1>
+<p>We defined <strong>return period</strong>, the expected amount of time for an extreme event of a certain magnitude to occur. For example, a 100-year flood of a river is a flood level that has a 1% chance of happening each year (and so an expected frequency of occurrence of once every 100 years).</p>
+<p>One way to think about determing the magnitudes for a certain return period or the return periods for a certain magnitude of event would be to look at probabilities in some kind of distribution: what are all the things that could happen, and how far out in the tail is our event? The trick of this is that we need to find the right distribution.</p>
+<p>We talked through some of the logic of why it’s not the normal distribution and collected some data (not fully successfully) to try to suggest this. Our dataset did seem like it had some fatter tails than the normal distribution, though, which is what we’re looking for when we’re taking something like the maximum of each of our samples.</p>
+<p>Okay, so what distribution is it? Based on the <a href="https://en.wikipedia.org/wiki/Fisher%E2%80%93Tippett%E2%80%93Gnedenko_theorem">Fisher-Tippett-Gnedenko Theorem</a>, it is the Generalized Extreme Value Distribution:</p>
+<p><span class="math display">\[G(x; \mu, \sigma, \xi) = \mathrm{exp}\left[-\left(1 + \xi \frac{x-\mu}{\sigma}\right)^{-1/\xi}\right],\]</span></p>
+<p>where <span class="math inline">\(\mu\)</span> is a location parameter (shifting the distribution left/right), <span class="math inline">\(\sigma &gt; 0\)</span> is a scale parameter (controlling the spread), and <span class="math inline">\(\xi\)</span> is a shape parameter (affecting skew).</p>
+<p>This is really a unified way of writing about three distributions that were known: the <a href="https://www.acsu.buffalo.edu/~adamcunn/probability/weibull.html">Weibull distribution</a> (good for short tails – wind, temperature), the <a href="https://www.acsu.buffalo.edu/~adamcunn/probability/frechet.html">Fréchet distribution</a> (heavy tails – floods, precipitation), and the <a href="https://www.acsu.buffalo.edu/~adamcunn/probability/gumbel.html">Gumbel distribution</a> (thinner long tails).</p>
+<p>If we have data, we can find the optimal parameter values to represent that data with a Generalized Extreme Value Distribution. And then from there we can look at probabilities in the tails to find return periods like we wanted!</p>
+</section>
+<section id="some-further-resources" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Some Further Resources</h1>
+<p><a href="https://academic.oup.com/jrssig/article/16/6/14/7029504">A climate-based introduction to extreme value theory</a></p>
+<p><a href="https://schumacher.atmos.colostate.edu/gherman/EVT_V1P1.pdf">A slide presentation about extreme value theory</a></p>
+<p><a href="https://academic.oup.com/jrssig/article/14/2/12/7029191">History and intro to extreme value theory (including an additional approach we didn’t discuss)</a></p>
+<p><a href="https://academic.oup.com/jrssig/article/15/2/10/7037755">Dive into the Weibull distribution</a></p>
+<p><a href="https://academic.oup.com/jrssig/article/18/2/8/7038248">An article using extreme value theory to analyze swimming competitions</a></p>
+<p><a href="https://significancemagazine.com/queen-elizabeth-ii-an-extreme-event-monarch/">An extreme value analysis of Queen Elizabeth II’s reign</a></p>
+<p><a href="https://academic.oup.com/jrssig/article/20/4/4/7233195">An article about limitations of extreme value theory in the face of climate change</a></p>
+<p><a href="https://academic.oup.com/jrssig/article/15/6/16/7037887">Combining the idea of return periods with some spatial statistics</a></p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -641,13 +508,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./course-syllabus.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Syllabus</span>
+      <a href="../weeks/week-9.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Week 9</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./weeks/week-1.html" class="pagination-link">
-        <span class="nav-page-text">Week 1</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../project.html" class="pagination-link">
+        <span class="nav-page-text">Project Description</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -657,7 +524,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">© Copyright 2026, Jessie Oehrlein</div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/jessoehrlein/Sp26-Math3900/issues/new" class="toc-action">Report an issue</a></p></div></div></div>
+    </div>
     <div class="nav-footer-right">This page is built with <a href="https://quarto.org/">Quarto</a>.</div>
   </div>
 </footer>
