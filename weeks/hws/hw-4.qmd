@@ -18,11 +18,7 @@ Due:
 
 In class, we briefly looked at discrete one-dimensional maps written in terms of the difference in $x$, like $\Delta x = x$, where $\Delta x$ told us what to add to $x_n$ to get to $x_{n+1}$. For example, with this map, when we started with $x_0 = 1$, we found
 
-$\begin{align*}
-x_1 &= x_0 + \Delta x = 1 + 1 = 2, \\
-x_2 &= x_1 + \Delta x = 2 + 2 = 4, \\
-x_3 &= x_2 + \Delta x = 4 + 4 = 8,
-\end{align*}$
+$\begin{align*} x_1 &= x_0 + \Delta x = 1 + 1 = 2, \\ x_2 &= x_1 + \Delta x = 2 + 2 = 4, \\ x_3 &= x_2 + \Delta x = 4 + 4 = 8, \end{align*}$
 
 and so forth.
 
@@ -64,6 +60,7 @@ For each equilibrium point $x^*$ that you found in Exercise 1, find the derivati
 You'll keep working with the three maps you chose in Exercise 1 here. For each one, choose a few initial values $x_0$ (that are not a fixed point you found above) and calculate the next $x_n$ values from each of those initial points, until you feel like someone could see what's going on. What kinds of things do you notice about your map?
 
 #### Part (b)
+
 Now for each of your maps, do the following:
 
 -   Draw a coordinate system with $x_n$ on the horizontal axis and $x_{n+1}$ on the vertical axis.

@@ -27,4 +27,3 @@ Answer these questions based on one of the two following readings:
 -   Describe the map (the action being done in each step) in the horseshoe example. What happens as this is repeated many times?
 
 -   In Li and Yorke's paper, this is mentioned as an example of using sequences of sets to find infinitely many periodic points. From what you read or saw, what feels similar to what we've been talking about in class? What feels different?
-
