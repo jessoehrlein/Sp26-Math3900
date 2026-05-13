@@ -55,6 +55,12 @@ website:
         contents:
           - href: project.qmd
             text: "Project Description"
+      - section: "Homework"
+        contents:
+          - href: weeks/hws/hw-1.qmd
+            text: "Homework 1"
+          - href: weeks/hws/hw-2.qmd
+            text: "Homework 2"
 
 format:
   html:
